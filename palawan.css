@@ -1,0 +1,73 @@
+.asidewoman{position:fixed; top:5%; right:20px; width:30px; height:auto; display:grid;gap:20px;
+   border:3px solid red;background-color:none;z-index:50;}
+   aside a{z-index:50;}
+   aside img{z-index:50;}
+   .asidewoman img{width:20px;height:20px; display:grid;margin:auto;padding-top:5px; padding-bottom: 5px;} 
+   .afteryoutube{border-top:3px dashed black;border-bottom:3px dashed black;height:23px ;width:36px;}  
+ /* body{background-color:rgb(104, 109, 23);background-image: url(image\beutman.webp);}*/
+ body{background-image: url('image/volkano.webp');
+  background-size: cover; /* Makes sure the image covers the entire background */
+   background-position:center 1px; /* Centers the image */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/*a.button{text-decoration: none;
+  border: 3px solid yellow;
+ padding:5px; 
+  font-weight: bold;
+ color:yellow;
+   font-size:13px; font-style:italic;background-color:red;padding:5px;
+  box-shadow:inset 1px 1px 1px black,
+  inset -1px -1px -1px black; height:37px;}
+
+*/.word{color:white;}
+.textMor{display:none;}
+.baton{text-decoration: none;
+    border: 3px solid yellow;
+     
+     
+    color:yellow;
+      font-size:10px; font-style:italic;background-color:red;padding:5px;
+     box-shadow:inset 1px 1px 1px black,
+     inset -1px -1px -1px black; }
+
+  .button{ text-decoration: none;
+    border: 3px solid yellow;
+   padding:5px; 
+    font-weight: bold;
+   color:yellow;
+     font-size:13px; font-style:italic;background-color:red;padding:5px;
+    box-shadow:inset 1px 1px 1px black,
+    inset -1px -1px -1px black; height:37px;}
+
+   .buttontwo{border:3px solid yellow; color:rgb(105, 17, 17); color:yellow;
+    padding:5px; font-size:12px; font-style:italic;background-color:red;}
+    .buttt{border:3px solid red;}
+.bodi{margin:auto;display:grid;}
+.bod {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: auto;
+  overflow: hidden;
+  flex-wrap: wrap;
+  
+}
+
+.choosep{text-align: center;width:70%;color:red;font-size:30px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-style: italic;font-weight: bold;align-items:center;margin:auto;
+   border:5px solid black;
+  text-shadow:2px 2px 4px white,
+-2px -2px 4px white;}
+.shopaimg{width:80px;height:auto;margin:auto;}
+
+
+body.face{background-image: url('./images/diving1.webp');
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Makes sure the image covers the entire background */
+  background-position:center 1px; /* Centers the image */
+ background-repeat: no-repeat;
+ background-attachment: fixed;}
+ 
