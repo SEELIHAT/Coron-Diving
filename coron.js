@@ -1,53 +1,21 @@
  
-function sendMessageToWhatsApp(phoneNumber, textElementId) {
-    // Initial message
-    var message = "Hello, I want to order:";
+function changeDisplay() {
+    document.getElementById('myDiv').style.display = 'grid';
+    document.getElementById('myDiv').style.color = 'yellow';
+    document.getElementById('myDiv').style.fontStyle = 'italic';
+    document.getElementById('myDiv').style.fontWidth = 'bold';
+    document.getElementById('myDiv').style.fontSize = '20'+'px';
+    document.getElementById('button').style.display = 'none';
+  }
 
-    // Get the text content from the specified element by ID
-    var additionalMessage = document.getElementById(textElementId).textContent;
+  let opentextButton = document.querySelector('.text'); // Select the button with class 'opentext'
 
-    // Append the additional message to the main message
-    message += " " + additionalMessage;
-
-    // Replace spaces with %20 for URL encoding
-    message = encodeURIComponent(message);
-
-    // Build the WhatsApp URL
-    var url = "https://wa.me/" + phoneNumber + "?text=" + message;
-
-    // Open WhatsApp in a new window/tab
-    window.open(url, '_blank');
-}
-
- /*function sendMessageToWhatsApp(phoneNumber, pId) {
-    var message = "Hello, I would like to order.";
+  opentextButton.onclick = function() {
+      let textElement = document.querySelector('.textone'); // Select the div with class 'textone'
+      if (textElement.style.display === 'block') {
+          textElement.style.display = 'none'; // Hide the text if it's currently visible
+      } else {
+          textElement.style.display = 'block'; // Show the text if it's currently hidden
+      }
+  };
   
-    // Get the text content from the specified <p> element
-    var additionalMessage = document.getElementById(pId).textContent;
-  
-    // Append the additional message to the main message
-    message += " " + additionalMessage;
-  
-    // Replace spaces with %20 for URL
-    message = encodeURIComponent(message);
-  
-    var url = "https://wa.me/" + phoneNumber + "?text=" + message;
-  
-        window.open(url, '_blank');}*/
-
-       /* function sendMessageToWhatsApp(phoneNumber, imgId) {
-            var message = "Hello, I would like to order.";
-          
-            // Get the text content from the specified <p> element
-            var additionalMessage = document.getElementById(imgId);
-          
-            // Append the additional message to the main message
-            message += " " + additionalMessage;
-          
-            // Replace spaces with %20 for URL
-            message = encodeURIComponent(message);
-          
-            var url = "https://wa.me/" + phoneNumber  + message;
-          
-            window.open(url, '_blank');
-          } */     

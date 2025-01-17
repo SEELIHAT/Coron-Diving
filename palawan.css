@@ -32,13 +32,16 @@
      inset -1px -1px -1px black; }
 
   .button{ text-decoration: none;
-    border: 3px solid yellow;
-   padding:5px; 
+    border: 3px solid white;
+   padding:5px;
+   border-top-left-radius: 25%;
+   border-bottom-right-radius: 25%;
+   background-color:black; 
     font-weight: bold;
-   color:yellow;
-     font-size:13px; font-style:italic;background-color:red;padding:5px;
-    box-shadow:inset 1px 1px 1px black,
-    inset -1px -1px -1px black; height:37px;}
+   color:rgb(193, 182, 230);
+     font-size:13px; font-style:italic;padding:5px;
+    box-shadow:inset 1px 1px 1px white,
+    inset -1px -1px -1px white; height:37px;}
 
    .buttontwo{border:3px solid yellow; color:rgb(105, 17, 17); color:yellow;
     padding:5px; font-size:12px; font-style:italic;background-color:red;}
@@ -53,9 +56,29 @@
   flex-wrap: wrap;
   
 }
+.toph{display:flex;justify-content: space-between;}
+.textMore{display:none;color:white;}
+h1{color:white;font-weight: bold; font-style: italic;font-family: 'Franklin Gothic Medium', sans-serif;
+text-shadow: 3px 3px 5px black,
+-3px -3px 5px black;text-align: center;}
+h2{color:white;font-weight: bold; font-style: italic;font-family: 'Franklin Gothic Medium', sans-serif;
+  text-shadow: 3px 3px 5px black,
+  -3px -3px 5px black;width:30%;float:right;text-align:center;}
+  h2.hh2{color:white;font-weight: bold; font-style: italic;font-family: 'Franklin Gothic Medium', sans-serif;
+    text-shadow: 3px 3px 5px black,
+    -3px -3px 5px black;width:30%;float:left;text-align:center;}
+    h3{color:white;font-weight: bold; font-style: italic;font-family: 'Franklin Gothic Medium', sans-serif;
+      text-shadow: 3px 3px 5px black,
+      -3px -3px 5px black;float:left;text-align:center;}
 
+   .menu{display:flex; justify-content:space-between;}
+   .wreckmenu{float:left;text-align:center;display:grid;justify-content:start;}
+   .wreckmenu a{border:3px solid white;border-radius: 20px; width:100%;font-size: 15px;background-color: rgb(4, 4, 88);color:white;height:30px;margin:10px;align-content:center;}
+   .stadymenu{float:right;text-align:center;display:grid;justify-content:end;}
+   .stadymenu a{border:3px solid white;border-radius: 20px; width:100%;font-size: 15px;background-color: rgb(4, 4, 88);color:white;height:30px;margin:10px;align-content:center;}
+.main-footer{margin-top: 20px;;}
 .choosep{text-align: center;width:70%;color:red;font-size:30px;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-style: italic;font-weight: bold;align-items:center;margin:auto;
+   font-family: 'Franklin Gothic Medium', sans-serif; font-style: italic;font-weight: bold;align-items:center;margin:auto;
    border:5px solid black;
   text-shadow:2px 2px 4px white,
 -2px -2px 4px white;}
@@ -70,4 +93,185 @@ body.face{background-image: url('./images/diving1.webp');
   background-position:center 1px; /* Centers the image */
  background-repeat: no-repeat;
  background-attachment: fixed;}
+ .ptop{color:white;font-size: 20px;}
+ main{display:grid;}
+ .bod {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: auto;
+  overflow: hidden;
+  flex-wrap: wrap;
+  
+}
+.foottop{color:white;}
+.dno {align-items: center;
+  text-decoration:underline;
+  color:whitesmoke;
+  margin:auto;
+ text-shadow: 3px 3px 3px black,
+ -3px -3px 3px black;
+}
+.dno:hover {
+  text-decoration: underline;
+}
+ .main-footer::after{content:url('');position:absolute;bottom:30px;width:20%;}
+.container {
+    margin-bottom: 30px;
+    display: flex;
+    border: 5px solid white;
+    border-radius: 5px 55px 5px 55px;
+    overflow: hidden;
+    gap: 20px;
+}
+.as{color:white;}
+.footer {
+    margin: 20px;
+    gap: 5px;
+}
+.footer address {
+    display: grid;
+    gap: 5px;
+}
+.footer img {
+    width: 20px;
+    height: 20px;
+}
+.footer p {
+    margin: 0;
+}
+
+a.youtube{color:red;font-size:23px; font-style:italic; text-decoration:dashed;background-color:white;
+  text-shadow: 1px 1px 2px gold;gap:5px;}
+  address p{color:white;}
+  address a{ gap:20px; color:white; margin:5px;}
+  #contacts{gap:10px;display:grid;}
+  @keyframes opa{10%{opacity:0.1;}50%{opacity:0.6;}100%{opacity:1;}}
+.sras{animation-name:opa;animation-duration:6s;}
+@keyframes jopa{10%{opacity:0.1;}50%{opacity:0.6;}100%{opacity:1; ;}}
+.lras{animation-name:jopa;animation-duration:6s; ;}
+@keyframes opa1{10%{opacity:0.1;}50%{opacity:0.6;}100%{opacity:1;}}
+.sras1{animation-name:opa1;animation-duration:6s;animation-delay:2s ;}
+@keyframes jopa1{10%{opacity:0.1;}50%{opacity:0.6;}100%{opacity:1; ;}}
+.lras1{animation-name:jopa1;animation-duration:6s;animation-delay: 2s;}
+@keyframes opa2{10%{opacity:0.1;}50%{opacity:0.6;}100%{opacity:1;}}
+.sras2{animation-name:opa2;animation-duration:6s;animation-delay: 5s;}
+@keyframes jopa2{10%{opacity:0.1;}50%{opacity:0.6;}100%{opacity:1; ;}}
+.lras2{animation-name:jopa2;animation-duration:6s;animation-delay: 5s;}
+@keyframes opa3{10%{opacity:0.1;}50%{opacity:0.6;}100%{opacity:1;}}
+.sras3{animation-name:opa3;animation-duration:6s;animation-delay: 7s;}
+@keyframes jopa3{10%{opacity:0.1;}50%{opacity:0.6;}100%{opacity:1; ;}}
+.lras3{animation-name:jopa3;animation-duration:6s;animation-delay: 7s;}
+@keyframes opa4{10%{opacity:0.1;}50%{opacity:0.6;}100%{opacity:1;}}
+.sras4{animation-name:opa4;animation-duration:6s;animation-delay: 8s;}
+@keyframes jopa4{10%{opacity:0.1;}50%{opacity:0.6;}100%{opacity:1; ;}}
+.lras4{animation-name:jopa4;animation-duration:6s; animation-delay: 8s;}
+@keyframes opa4{10%{opacity:0.1;}50%{opacity:0.6;}100%{opacity:1;}}
+.sras5{animation-name:opa4;animation-duration:6s;animation-delay: 9s;}
+@keyframes jopa4{10%{opacity:0.1;}50%{opacity:0.6;}100%{opacity:1; ;}}
+.lras5{animation-name:jopa4;animation-duration:6s; animation-delay: 9s;}
+@keyframes opa4{10%{opacity:0.1;}50%{opacity:0.6;}100%{opacity:1;}}
+.sras6{animation-name:opa4;animation-duration:6s;animation-delay: 10s;}
+@keyframes jopa4{10%{opacity:0.1;}50%{opacity:0.6;}100%{opacity:1; ;}}
+.lras6{animation-name:jopa4;animation-duration:6s; animation-delay: 10s;}
+@keyframes opa4{10%{opacity:0.1;}50%{opacity:0.6;}100%{opacity:1;}}
+.sras7{animation-name:opa4;animation-duration:6s;animation-delay: 11s;}
+@keyframes jopa4{10%{opacity:0.1;}50%{opacity:0.6;}100%{opacity:1; ;}}
+.lras7{animation-name:jopa4;animation-duration:6s; animation-delay: 11s;}
+@keyframes opa4{10%{opacity:0.1;}50%{opacity:0.6;}100%{opacity:1;}}
+.sras8{animation-name:opa4;animation-duration:6s;animation-delay: 12s;}
+@keyframes jopa4{10%{opacity:0.1;}50%{opacity:0.6;}100%{opacity:1; ;}}
+.lras8{animation-name:jopa4;animation-duration:6s; animation-delay: 12s;}
+@keyframes opa4{10%{opacity:0.1;}50%{opacity:0.6;}100%{opacity:1;}}
+.sras9{animation-name:opa4;animation-duration:6s;animation-delay: 13s;}
+@keyframes jopa4{10%{opacity:0.1;}50%{opacity:0.6;}100%{opacity:1; ;}}
+.lras9{animation-name:jopa4;animation-duration:6s; animation-delay: 13s;}
+@keyframes opa4{10%{opacity:0.1;}50%{opacity:0.6;}100%{opacity:1;}}
+.sras10{animation-name:opa4;animation-duration:6s;animation-delay: 14s;}
+@keyframes jopa4{10%{opacity:0.1;}50%{opacity:0.6;}100%{opacity:1; ;}}
+.lras10{animation-name:jopa4;animation-duration:6s; animation-delay: 14s;}
+.bubbleone, .bubbletwo, .bubblefree,.bubblechetire,.bubblepiat,.bubbleshest{
+  position: absolute;
+  animation-fill-mode: forwards; /* Ensures the element disappears after animation ends */
+  opacity: 1; /* Start fully visible */
+}
+
+.bubbleone {z-index: 100;
+  width: 50px;
+  top:1;
+  animation-name: bubbleras;
+  animation-duration: 10s;
+}
+
+.bubbletwo {z-index: 100;
+  width: 30px;
+  top: 1;
+  animation-name: bubbledwa;
+  animation-duration: 12s;
+}
+
+.bubblefree {
+  width: 70px;
+  top: 1px;
+  animation-name: bubbletri;
+  animation-duration: 14s;
+}
+
+@keyframes bubbleras {
+  0% { bottom: 0%; left: 40%; opacity: 1; }
+  70% { bottom: 50%; left: 45%; opacity: 0.5; }
+  100% { bottom: 100%; left: 47%; opacity: 0; }
+}
+
+@keyframes bubbledwa {
+  0% { bottom: 0%; left: 60%; opacity: 1; }
+  70% { bottom: 50%; left: 69%; opacity: 0.5; }
+  100% { bottom: 100%; left: 71%; opacity: 0; }
+}
+
+@keyframes bubbletri {
+  0% { bottom: 0%; left: 70%; opacity: 1; }
+  70% { bottom: 50%; left: 75%; opacity: 0.5; }
+  100% { bottom: 100%; left: 81%; opacity: 0; }
+}
+@keyframes bubblechetire {
+  0% { bottom: 0%; left: 30%; opacity: 1; }
+  70% { bottom: 50%; left: 39%; opacity: 0.5; }
+  100% { bottom: 100%; left: 41%; opacity: 0; }
+}
+@keyframes bubblepiat {
+  0% { bottom: 0%; left: 18%; opacity: 1; }
+  70% { bottom: 50%; left: 25%; opacity: 0.5; }
+  100% { bottom: 100%; left: 28%; opacity: 0; }
+}
+@keyframes bubbleshest {
+  0% { bottom: 0%; left: 20%; opacity: 1; }
+  70% { bottom: 50%; left: 19%; opacity: 0.5; }
+  100% { bottom: 100%; left: 23%; opacity: 0; }
+}
+
+.bubblechetire {z-index: 100;
+  width: 75px;
+  top:1;
+  animation-name: bubblechetire;
+  animation-duration: 6s;
+}
+.bubblepiat {z-index: 100;
+  width: 45px;
+  top:1;
+  animation-name: bubblepiat;
+  animation-duration: 7s;
+}
+.bubbleshest {z-index: 100;
+  width: 120px;
+  top:1;
+  animation-name:bubbleshest;
+  animation-duration: 8s;
+}
+
+
+
+
+
+                    
  
