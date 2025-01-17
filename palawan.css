@@ -231,22 +231,22 @@ a.youtube{color:red;font-size:23px; font-style:italic; text-decoration:dashed;ba
 
 @keyframes bubbletri {
   0% { bottom: 0%; left: 70%; opacity: 1; }
-  70% { bottom: 50%; left: 75%; opacity: 0.5; }
+  
   100% { bottom: 100%; left: 81%; opacity: 0; }
 }
 @keyframes bubblechetire {
   0% { bottom: 0%; left: 30%; opacity: 1; }
-  70% { bottom: 50%; left: 39%; opacity: 0.5; }
+ 
   100% { bottom: 100%; left: 41%; opacity: 0; }
 }
 @keyframes bubblepiat {
   0% { bottom: 0%; left: 18%; opacity: 1; }
-  70% { bottom: 50%; left: 25%; opacity: 0.5; }
+ 
   100% { bottom: 100%; left: 28%; opacity: 0; }
 }
 @keyframes bubbleshest {
   0% { bottom: 0%; left: 20%; opacity: 1; }
-  70% { bottom: 50%; left: 19%; opacity: 0.5; }
+  
   100% { bottom: 100%; left: 23%; opacity: 0; }
 }
 
