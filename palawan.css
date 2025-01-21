@@ -124,6 +124,8 @@ body.face{background-image: url('./images/diving1.webp');
     overflow: hidden;
     gap: 20px;
 }
+
+.bob{background-color:rgb(35, 35, 148);}
 .as{color:white;}
 .footer {
     margin: 20px;
@@ -269,9 +271,41 @@ a.youtube{color:red;font-size:23px; font-style:italic; text-decoration:dashed;ba
   animation-duration: 8s;
 }
 
+img .imgmaruko{width:220px;margin:auto;height:250px;margin:auto;}
+.name{color:black; font-size:20px;text-align:center;}
+.hello li{text-decoration: none;list-style-type: none; font-size: 20px;text-align:center;}
+.wreckdiv1{display:grid;}
+.wracksection1{display:grid;}
+.wracksection1 h1{color:black;}
+.wracksection1 p{color:black;}
+.wracksection1{color:black;}
+.wracksection h2{color:black;}
+.wrackdiv2 img{width:220px;height:250px;margin:auto;}
+.wrackdiv2{display:flex; overflow: hidden;flex-wrap: wrap;gap:10px;}
+.wreckp{color:black;font-size: 20px;font-style: italic; font-family:'Franklin Gothic Medium', sans-serif;}
+.wreckdiv1 p{color:black;font-size: 20px;font-style: italic; font-family:'Franklin Gothic Medium', sans-serif;}
+ .ul hello{text-align: center;}
+ .header2{background-color:rgb(35, 35, 148);border-radius: 5px 55px 5px 55px;} 
+ .wreckp2{color:white;text-align:center;font-size:20px;font-style: italic; font-family:'Franklin Gothic Medium', sans-serif;}                  
+ aside{position:fixed; top:20%;right:30px; display:grid;gap:15px;}
+ .asidea{width:80px;height:30px; background-color:black; color:white; border-radius:5px 20px 5px 20px;text-align:center; }
 
+ @keyframes fly {
+  0% { bottom: 70%; right: 30%; opacity: 1; }
+  
+  100% { bottom: 72%; right: 81%; opacity: 0; }
+}
+.warfly{width:10%;height:6%; animation-name: fly; animation-duration: 10s;position:fixed;}
 
-
-
-                    
- 
+@keyframes warwreck {
+  0% { bottom: 40%; right: 40%; opacity: 1; }
+  70% { bottom: 40%; right: 45%; opacity: 1; }
+  100% { bottom: 30%; right: 45%; opacity: 0; }
+}
+.warwreck{width:35% ;height:20%;animation-name: warwreck;animation-duration: 10s;position:fixed;}
+@keyframes warbomb {
+  0% { bottom: 70%; right: 45%; opacity: 1; }
+  
+  100% { bottom: 40%; right: 45%; opacity: 0; }
+}
+.warbomb{width:5% ;height:3%;animation-name: warbomb;animation-duration: 2s;position:fixed;animation-delay: 2s;}
