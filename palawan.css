@@ -306,6 +306,27 @@ img .imgmaruko{width:220px;margin:auto;height:250px;margin:auto;}
 @keyframes warbomb {
   0% { bottom: 70%; right: 45%; opacity: 1; }
   
-  100% { bottom: 40%; right: 45%; opacity: 0; }
+  100% { bottom: 50%; right: 45%; opacity: 0; }
 }
 .warbomb{width:5% ;height:3%;animation-name: warbomb;animation-duration: 2s;position:fixed;animation-delay: 2s;}
+
+.warwreck{width:35% ;height:20%;animation-name: warwreck;animation-duration: 10s;position:fixed;}
+
+@keyframes warbomb {
+  0% { bottom: 70%; right: 45%; opacity: 1; }
+  
+  100% { bottom: 50%; right: 45%; opacity: 0; }
+}
+.warbomb{width:5% ;z-index:10;height:3%;animation-name: warbomb;animation-duration: 2s;position:fixed;animation-delay: 2s;}
+@keyframes warfair {
+  0% { bottom: 50%; right: 45%; opacity: 1;width:10%;}
+  
+  100% { bottom: 51%; right: 45%; opacity: 0;width:20%;}
+}
+.warfair{width:10% ;height:3%;animation-name: warfair;animation-duration: 2s;position:fixed;animation-delay: 3s;}
+.scubasection{display:grid;gap:15px; border:3px solid black;}
+.scubadiver{float:left;}
+.scubaflex{display:flex;flex-wrap: wrap;overflow: hidden;}
+.scubaflex img{float:left;width:220px;height:auto;}
+.scubaflex h2{margin:auto;}
+.courssection{width:220px;}
