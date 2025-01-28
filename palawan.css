@@ -339,3 +339,32 @@ img .imgmaruko{width:220px;margin:auto;height:250px;margin:auto;}
 -5px -5px 1px black;display:flex;flex-wrap:wrap;}
 .courseimg{width:100px;height:80px;border:5px solid blue;border-radius:35px 15px 35px 15px;padding:5px;margin-left:-200px;}
 main .padicourse{gap:10px;}
+.gallery-grid{display:flex;flex-wrap: wrap; overflow: hidden;}
+.gallery-grid img{width:220px;height:auto; margin:auto;}
+.scubasection {margin-top:10px;}
+li{list-style-type:none;}
+
+#carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px; /* Adjust width as needed */
+  margin: 0 auto;
+}
+
+#image-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+  min-width: 100%;
+  height: auto;}
+  .pich{display:flex;flex-wrap:wrap;overflow:hidden;}
+  .dich{display:grid;text-align:center;text-decoration: underline;}
+  .kich{margin:auto;}
+.kruch{display:grid; gap:10px; margin:auto;} 
+.keep{margin-top:10px;}
+.wreckp{padding:10px;}
+
+

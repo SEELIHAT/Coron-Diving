@@ -19,3 +19,40 @@ function changeDisplay() {
       }
   };
   
+
+
+  let currentSlide = 1;
+    let slideInterval;
+    
+    document.addEventListener("DOMContentLoaded", function () {
+    startSlideShow(); // Start the slideshow when the DOM is loaded
+    });
+    
+    function startSlideShow() {
+    slideInterval = setInterval(function () {
+        changeSlide(1); // Change to the next slide every 3 seconds
+    }, 2000);
+    }
+    
+    function stopSlideShow() {
+    clearInterval(slideInterval); // Stop the slideshow
+    }
+    
+    function changeSlide(n) {
+    showSlide(currentSlide += n);
+    }
+    
+    function showSlide(n) {
+    const slides = document.getElementsByClassName("carousel-image");
+    
+    if (n > slides.length) {
+        currentSlide = 1;
+    }
+    
+    if (n < 1) {
+        currentSlide = slides.length;
+    }
+    
+    const transformValue = -100 * (currentSlide - 1) + "%";
+    document.getElementById("image-container").style.transform = "translateX(" + transformValue + ")";
+    }

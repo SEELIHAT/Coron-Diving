@@ -7,6 +7,45 @@
     <meta name="description" content="Learn to scuba dive with PADI-certified courses. Start your underwater adventure today!"><meta name="keywords" content="PADI, Scuba Diving Course, Underwater Adventure">
     <title>PADI Scuba Diver Course</title>
     <link rel="stylesheet" href="palawan.css">
+    <script src="coron.js" defer></script>
+
+    <script> let currentSlide = 1;
+        let slideInterval;
+        
+        document.addEventListener("DOMContentLoaded", function () {
+        startSlideShow(); // Start the slideshow when the DOM is loaded
+        });
+        
+        function startSlideShow() {
+        slideInterval = setInterval(function () {
+            changeSlide(1); // Change to the next slide every 3 seconds
+        }, 2000);
+        }
+        
+        function stopSlideShow() {
+        clearInterval(slideInterval); // Stop the slideshow
+        }
+        
+        function changeSlide(n) {
+        showSlide(currentSlide += n);
+        }
+        
+        function showSlide(n) {
+        const slides = document.getElementsByClassName("carousel-image");
+        
+        if (n > slides.length) {
+            currentSlide = 1;
+        }
+        
+        if (n < 1) {
+            currentSlide = slides.length;
+        }
+        
+        const transformValue = -100 * (currentSlide - 1) + "%";
+        document.getElementById("image-container").style.transform = "translateX(" + transformValue + ")";
+        }
+        </script>
+
 </head>
 <body>
     <header style="height:10%;" class="header2">
@@ -17,7 +56,7 @@
     </header>
 
     <main class="padicourse">
-        <section class="scubaflex">
+        <section class="scubaflex keep">
             <p class="courseup">Look the film about our course Padi</p>
            <a href=""> <img class="courseimg" src="images/diving1.webp" alt="Scuba diver underwater"></a>
             <h2>Your Journey to the Underwater World Starts Here</h2>
@@ -25,35 +64,35 @@
 
         <section class="scubasection">
             <h2 class="scubadiver">About the Course</h2>
-            <p >The PADI Scuba Diver course is your gateway to exploring the underwater world. This course is ideal for beginners and provides the knowledge and skills you need to dive safely and confidently. No prior experience is necessary.</p>
+            <p class="wreckp">The PADI Scuba Diver course is your gateway to exploring the underwater world. This course is ideal for beginners and provides the knowledge and skills you need to dive safely and confidently. No prior experience is necessary.</p>
         </section>
 
         <section class="scubasection">
-            <h2 class="scubadiver">What You Will Learn</h2>
-            <ul style="display:grid;text-align:center;text-decoration: underline;">
+            <div class="pich"><div style="margin:auto;"><h2 class="scubadiver">What You Will Learn</h2>
+            <ul class="dich">
                 <li>Basic scuba diving principles and safety guidelines</li>
                 <li>How to use scuba equipment</li>
                 <li>Underwater communication techniques</li>
                 <li>Key skills for shallow water diving</li>
-            </ul>
-            <img class="courssection"src="images\WRECK.png" alt="Scuba diving equipment" class="">
+            </ul></div>
+            <div class="kich"><img class="courssection"src="images\palawan diving.webp" alt="Scuba diving equipment" class=""></div></div>
         </section>
 
         <section class="scubasection">
-            <h2 class="scubadiver">Course Structure</h2>
-            <p>The PADI Scuba Diver course consists of three main phases:</p>
-            <ol style="display:grid;text-align:center; text-decoration: underline;">
+           <h2 class="scubadiver">Course Structure</h2>
+           <div class="pich"> <div class="kruch"> <p>The PADI Scuba Diver course consists of three main phases:</p>
+            <ol class="">
                 <li>Knowledge Development (Online or Classroom)</li>
                 <li>Confined Water Dives to practice skills</li>
                 <li>Open Water Dives to apply what you have learned</li>
-            </ol>
-            <img class="courssection" src="images\WRECK.png" alt="Scuba training session" class="">
+            </ol></div>
+            <div class="kich"><img class="courssection" src="images\course advance.webp" alt="Scuba training session" class=""></div></div>
         </section>
 
         <section class="scubasection">
             <h2 class="scubadiver">Course Pricing</h2>
             <p>The course fee is <strong>$450</strong>, which includes:</p>
-            <ul style="display:grid; text-align:center;">
+            <ul style="display:grid; text-align:center;text-decoration: underline;">
                 <li>All training materials</li>
                 <li>Equipment rental</li>
                 <li>Certification fee</li>
@@ -62,19 +101,22 @@
 
         <section class="scubasection">
             <h2 class="scubadiver">Enroll Today</h2>
-            <p class="wreckp">Ready to start your underwater adventure? Contact us today to reserve your spot in the next course!</p>
+            <p class="wreckp">Ready to start your underwater adventure? Contact us today to reserve your
+                 spot in the next course!</p>
             
-        </section>
+        </section></main>
 
-        <section class="scubasection">
-            <h2 class="scubadiver">Gallery</h2>
-            <div class="gallery-grid">
-                <img src="images/underwater1.jpg" alt="Divers exploring a reef">
-                <img src="images/underwater2.jpg" alt="Diver near coral">
-                <img src="images/underwater3.jpg" alt="Group of divers underwater">
+        <div style="margin-top:30px; text-align:center;" id="carousel-container">
+            <div id="image-container">
+                <img class="carousel-image" id="photo1" src="./images/пирамиды 2.jpg" alt="Image 1">
+                <img class="carousel-image" id="photo2" src="./images/пирамиды 313.png" alt="Image 2">
+                <img class="carousel-image" id="photo3" src="./images/course advance.webp" alt="Image 3">
+                <img class="carousel-image" id="photo4" src="./images/course open water.webp" alt="Image 4">
+                <img class="carousel-image" id="photo5" src="./images/palawan diving.webp" alt="Image 5">
+                <img class="carousel-image" id="photo6" src="./images/пирамиды 2.jpg" alt="Image 6">
             </div>
-        </section>
-    </main>
+        </div>
+    
 
     <footer class="main-footer">
         <div class="container bob">
@@ -113,5 +155,6 @@
       
      
      </footer>
+     <script src="coron.js"></script>
 </body>
 </html>
