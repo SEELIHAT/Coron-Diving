@@ -1,117 +1,167 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  
-
-<meta name="description" content="">
-<meta name="keywords" content="">
-  <meta name="author" content="Евгений">
-  
-  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coron-diving</title>
- 
-    <link rel="stylesheet" href="jekky.css">
-<link rel ="shortcut icon" href=".\image\jekkytiga.svg" width="100"height="100" type="image/png">
-	
- 
+    <meta name="description" content="Learn scuba diving with the PADI Junior Open Water course. Start your underwater adventure today!">
+    <meta name="keywords" content="PADI, Junior Open Water, Scuba Diving Course, Kids Diving">
+    <title>PADI Junior Open Water Course</title>
+    <link rel="stylesheet" href="palawan.css">
+    <script src="coron.js" defer></script>
+    <link rel="shortcut icon" href="./images/diving2.svg" type="image/png">
+    <script> let currentSlide = 1;
+        let slideInterval;
+        
+        document.addEventListener("DOMContentLoaded", function () {
+        startSlideShow(); // Start the slideshow when the DOM is loaded
+        });
+        
+        function startSlideShow() {
+        slideInterval = setInterval(function () {
+            changeSlide(1); // Change to the next slide every 3 seconds
+        }, 2000);
+        }
+        
+        function stopSlideShow() {
+        clearInterval(slideInterval); // Stop the slideshow
+        }
+        
+        function changeSlide(n) {
+        showSlide(currentSlide += n);
+        }
+        
+        function showSlide(n) {
+        const slides = document.getElementsByClassName("carousel-image");
+        
+        if (n > slides.length) {
+            currentSlide = 1;
+        }
+        
+        if (n < 1) {
+            currentSlide = slides.length;
+        }
+        
+        const transformValue = -100 * (currentSlide - 1) + "%";
+        document.getElementById("image-container").style.transform = "translateX(" + transformValue + ")";
+        }
+        </script>
 </head>
+<body>
+    <header class="header2">
+        <h1>PADI Junior Open Water Course</h1>
+        <nav class="nav"><img class="navimg" src="images/line.png"><a class="nava" href="">Home</a></nav>
+        <aside>
+            <a class="asidea" href="">Order trip</a><a class="asidea" href="">Contact us</a>
+        </aside>
+    </header>
 
+    <main class="padicourse">
+      <section class="scubaflex keep">
+        <p class="courseup">Look the film about our course Padi</p>
+       <a href=""> <img class="courseimg" src="images/diving1.webp" alt="Scuba diver underwater"></a>
+        <h2>Your Journey to the Underwater World Starts Here</h2>
+    </section>
 
+        <section class="scubasection">
+            <h2 class="scubadiver">About the Course</h2>
+            <p class="wreckp">The PADI Junior Open Water course is designed for young adventurers aged 10-14. It provides the knowledge and skills needed to dive safely, making it an ideal introduction to the underwater world.</p>
+        </section>
 
-<body  class="first">
-    <header class="header"><aside></aside></header><main><p class="wreckp">### Junior Open Water Diver Course (PADI)
+        <section class="scubasection">
+            <div class="pich">
+                <div><h2 class="scubadiver">What Kids Will Learn</h2>
+                    <ul class="dich">
+                        <li>Basic scuba diving principles</li>
+                        <li>How to use scuba equipment</li>
+                        <li>Safe diving techniques</li>
+                        <li>How to explore the underwater world responsibly</li>
+                    </ul>
+                </div>
+                <div class="kich"><img class="courssection" src="images/palawan_diving.webp" alt="Scuba diving equipment"></div>
+            </div>
+        </section>
 
-      The **PADI Junior Open Water Diver Course** is the perfect introduction to scuba diving for young adventurers. Designed for kids aged 10 to 14, this globally recognized certification opens the door to the magical underwater world in a safe, fun, and educational way. With guidance from certified instructors, young divers gain confidence and skills that last a lifetime.
+        <section class="scubasection">
+            <h2 class="scubadiver">Course Structure</h2>
+            <div class="pich">
+                <div class="kruch">
+                    <p>The PADI Junior Open Water course consists of:</p>
+                    <ol>
+                        <li>Knowledge Development (Online or Classroom)</li>
+                        <li>Confined Water Dives to practice skills</li>
+                        <li>Open Water Dives under supervision</li>
+                    </ol>
+                </div>
+                <div class="kich"><img class="courssection" src="images/course_advance.webp" alt="Junior diving training"></div>
+            </div>
+        </section>
+
+        <section class="scubasection">
+            <h2 class="scubadiver">Course Pricing</h2>
+            <p>The course fee is <strong>$480</strong>, which includes:</p>
+            <ul>
+                <li>Training materials</li>
+                <li>Equipment rental</li>
+                <li>Certification fee</li>
+            </ul>
+        </section>
+
+        <section class="scubasection">
+            <h2 class="scubadiver">Enroll Today</h2>
+            <p class="wreckp">Give your child an unforgettable experience! Contact us today to book a spot in the next course.</p>
+        </section>
+        <section><img  class="animation" src=".\images\diver-woman.png"></section></main>
+
+        <div style="margin-top:30px; text-align:center;" id="carousel-container">
+            <div id="image-container">
+                <img class="carousel-image" id="photo1" src=".\images\DALL·E 2025-01-16 18.29.27 - A stunning underwater view of the Irako Maru wreck in Coron, Palawan, Philippines. The scene shows the well-preserved structure of a World War II Japa.webp" alt="Image 1">
+                <img class="carousel-image" id="photo2" src=".\images\DALL·E 2025-01-29 17.35.16 - A male and a female scuba diver preparing their equipment before underwater training. They are on a boat or near the shore, wearing wetsuits and setti.webp" alt="Image 2">
+                <img class="carousel-image" id="photo3" src="./images/course advance.webp" alt="Image 3">
+                <img class="carousel-image" id="photo4" src="./images/course open water.webp" alt="Image 4">
+                <img class="carousel-image" id="photo5" src="./images/palawan diving.webp" alt="Image 5">
+                <img class="carousel-image" id="photo6" src=".\images\DALL·E 2025-01-29 17.36.19 - A male and a female scuba diver practicing underwater training. They are submerged in clear blue water, wearing full scuba gear including wetsuits, ta.webp" alt="Image 6">
+            </div>
+        </div>
+    
+
+    <footer class="main-footer">
+        <div class="container bob">
+          <div id="contacts" class="footer">
+            <p class="foottop">Contact us</p>
+            
+            <address>
+                <p class="wreckp">E-mail:</p> <a class="a" href="mailto:etumanov77@gmail">etumanov77@gmail.com</a>
+                <img src=".\images\phone.jpg"><a class="a" href="tel:+79622923791">Phone: +79622923791</a>
+                <a  href="https://maps.app.goo.gl/HhNe84gCzap5n8RT8">
+                  <img src="images\shopmap.png" alt="Открыть Google">
+                Goole map</a>
+                <a class="a" aria-label="WhatsApp" href="https://wa.me/79622923791">
+                    <img alt="Chat on WhatsApp" src="images\watson.jpg"/> WhatsApp
+                </a>
+     
+              </address>
+              <p class="as">&copy; 2025 Diving in Coron</p>
+          </div>
       
-      ---
+          <div class="img-cont">
+              <img src=".\images\diving2.svg"width="100" height="100" alt="Optik Logo">
+          </div>
       
-      #### **What They’ll Learn**
-      The Junior Open Water course mirrors the adult Open Water Diver program, with adjustments to suit younger learners. It includes three key components:
+          <div class="bod">
+            <a class="dno" href="Jekky-shop.html">Coron Palawan</a>
+            
+            <a class="dno" href="catalog-sunglasses-jekky.html">Choose couse</a>
+            <a class="dno" href="Contact-lens-soflens.html">Choose the diving sait</a>
+            <a class="dno" href="color-lens-hera.html">All about us</a>
+            <a class="dno" href="#hop">Come to the top</a>
+            
+            
+        </div>
+      </div>
       
-      1. **Knowledge Development**  
-         - Learn basic diving principles through engaging materials like videos, manuals, or online resources.  
-         - Topics include safe diving practices, underwater communication, and equipment use.
-      
-      2. **Confined Water Dives**  
-         - Practice essential skills in a controlled environment like a pool or shallow water.  
-         - Skills include mask clearing, buoyancy control, regulator recovery, and underwater breathing techniques.  
-      
-      3. **Open Water Dives**  
-         - Experience four dives in open water under close supervision.  
-         - These dives allow young divers to explore the underwater world and apply their skills in real-world settings.
-      
-      ---
-      
-      #### **Why Take the Course?**
-      - **Global Certification**: Junior Open Water Diver certification is recognized worldwide. Once certified, young divers can explore dive sites up to a depth of 12 meters (40 feet) with a certified adult.  
-      - **Boost Confidence**: Diving fosters independence and teamwork, helping kids build self-esteem.  
-      - **Discover Marine Life**: Learn about underwater ecosystems and the importance of protecting the ocean.  
-      
-      ---
-      
-      #### **Course Requirements**
-      - **Age**: 10–14 years.  
-      - **Health**: Participants must be in good health and comfortable in the water. A medical questionnaire may be required.  
-      - **Swimming Skills**: Basic swimming ability, including a 200-meter swim and a 10-minute float, is required.
-      
-      ---
-      
-      #### **What’s Included**
-      - Training materials tailored for younger learners.  
-      - Full scuba equipment, including child-sized masks, fins, and buoyancy devices.  
-      - Professional instruction and supervision by certified PADI instructors.  
-      - PADI Junior Open Water Diver certification upon successful completion.
-      
-      ---
-      
-      #### **Duration and Cost**
-      - The course typically takes 3–4 days to complete, depending on the schedule.  
-      - Costs range from $300 to $500 and usually include equipment rental, training, and certification fees.
-      
-      ---
-      
-      #### **Why Choose Us?**
-      Our dive center specializes in creating a fun, safe, and engaging environment for young divers. With high-quality equipment and access to vibrant underwater locations, your child will enjoy an unforgettable learning experience.
-      
-      ---
-      
-      #### **Ready to Start?**
-      The **PADI Junior Open Water Diver Course** is more than just a certification—it’s the beginning of a lifelong adventure. Help your child take their first steps into the underwater world and create memories that will inspire them for years to come!</p></main> <footer class="main-footer">
-         <div class="container bob">
-           <div id="contacts" class="footer">
-             <p class="foottop">Contact us</p>
-             
-             <address>
-                 <p class="wreckp">E-mail:</p> <a class="a" href="mailto:etumanov77@gmail">etumanov77@gmail.com</a>
-                 <img src=".\images\phone.jpg"><a class="a" href="tel:+79622923791">Phone: +79622923791</a>
-                 <a  href="https://maps.app.goo.gl/HhNe84gCzap5n8RT8">
-                   <img src="images\shopmap.png" alt="Открыть Google">
-                 Goole map</a>
-                 <a class="a" aria-label="WhatsApp" href="https://wa.me/79622923791">
-                     <img alt="Chat on WhatsApp" src="images\watson.jpg"/> WhatsApp
-                 </a>
-      
-               </address>
-               <p class="as">&copy; 2025 Diving in Coron</p>
-           </div>
-       
-           <div class="img-cont">
-               <img src=".\image\1721383789570.jpeg" alt="Optik Logo">
-           </div>
-       
-           <div class="bod">
-             <a class="dno" href="Jekky-shop.html">Coron Palawan</a>
-             
-             <a class="dno" href="catalog-sunglasses-jekky.html">Choose couse</a>
-             <a class="dno" href="Contact-lens-soflens.html">Choose the diving sait</a>
-             <a class="dno" href="color-lens-hera.html">All about us</a>
-             <a class="dno" href="#hop">Come to the top</a>
-             
-             
-         </div>
-       </div>
-       
-      
-      </footer></body></html>
+     
+     </footer>
+     <script src="coron.js"></script>
+</body>
+</html>
+ 

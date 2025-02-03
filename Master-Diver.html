@@ -1,117 +1,160 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  
-
-<meta name="description" content="">
-<meta name="keywords" content="">
-  <meta name="author" content="Евгений">
-  
-  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coron-diving</title>
- 
-    <link rel="stylesheet" href="jekky.css">
-<link rel ="shortcut icon" href=".\image\jekkytiga.svg" width="100"height="100" type="image/png">
-	
- 
+    <meta name="description" content="Achieve the highest level of recreational scuba diving with the PADI Master Scuba Diver Course.">
+    <meta name="keywords" content="PADI, Master Scuba Diver, Scuba Diving Course, Advanced Diving">
+    <title>PADI Master Scuba Diver Course</title>
+    <link rel="stylesheet" href="palawan.css">
+    <script src="coron.js" defer></script>
+    <link rel="shortcut icon" href="./images/diving.svg" width="150" height="150" type="image/png">
+    <script> let currentSlide = 1;
+        let slideInterval;
+        
+        document.addEventListener("DOMContentLoaded", function () {
+        startSlideShow(); // Start the slideshow when the DOM is loaded
+        });
+        
+        function startSlideShow() {
+        slideInterval = setInterval(function () {
+            changeSlide(1); // Change to the next slide every 3 seconds
+        }, 2000);
+        }
+        
+        function stopSlideShow() {
+        clearInterval(slideInterval); // Stop the slideshow
+        }
+        
+        function changeSlide(n) {
+        showSlide(currentSlide += n);
+        }
+        
+        function showSlide(n) {
+        const slides = document.getElementsByClassName("carousel-image");
+        
+        if (n > slides.length) {
+            currentSlide = 1;
+        }
+        
+        if (n < 1) {
+            currentSlide = slides.length;
+        }
+        
+        const transformValue = -100 * (currentSlide - 1) + "%";
+        document.getElementById("image-container").style.transform = "translateX(" + transformValue + ")";
+        }
+        </script>
 </head>
+<body>
+    <header class="header2">
+        <h1>PADI Master Scuba Diver Course</h1>
+        <nav class="nav"><img class="navimg" src="images/line.png"><a class="nava" href="">Home</a></nav>
+        <aside>
+            <a class="asidea" href="">Order trip</a><a class="asidea" href="">Contact us</a>
+        </aside>
+    </header>
 
+    <main class="padicourse">
+      <section class="scubaflex keep">
+        <p class="courseup">Look the film about our course Padi</p>
+       <a href=""> <img class="courseimg" src="images/diving1.webp" alt="Scuba diver underwater"></a>
+        <h2>Your Journey to the Underwater World Starts Here</h2>
+    </section>
 
+        <section class="scubasection">
+            <h2 class="scubadiver">About the Course</h2>
+            <p class="wreckp">The PADI Master Scuba Diver certification is the highest level in recreational diving. This program enhances your skills, making you a highly experienced diver. It requires completing specialty courses, logged dives, and a Rescue Diver certification.</p>
+        </section>
 
-<body  class="first">
-    <header class="header"><aside></aside></header><main><p>### PADI Master Scuba Diver Course  
+        <section class="scubasection">
+            <div class="pich">
+                <div>
+                    <h2 class="scubadiver">What You Will Learn</h2>
+                    <ul class="dich">
+                        <li>Advanced diving techniques and safety procedures</li>
+                        <li>Specialty dive training (e.g., deep diving, night diving, wreck diving)</li>
+                        <li>Emergency response skills</li>
+                        <li>Navigation and buoyancy control</li>
+                    </ul>
+                </div>
+                <div class="kich"><img class="courssection" src="images/palawan_diving.webp" alt="Advanced Scuba Training"></div>
+            </div>
+        </section>
 
-      The **PADI Master Scuba Diver** certification is the highest recreational diving level in the PADI system. It represents the pinnacle of scuba diving achievement and recognizes you as a highly experienced and skilled diver. Earning this prestigious certification opens doors to advanced diving adventures and demonstrates your dedication to underwater exploration.  
-      
-      ---
-      
-      #### **What is a Master Scuba Diver?**  
-      A **PADI Master Scuba Diver** is a diver with a wealth of experience and training, possessing expertise in a variety of diving specialties. It’s not just a certification—it’s a recognition of your commitment to becoming the best recreational diver you can be.  
-      
-      ---
-      
-      #### **What You’ll Accomplish**  
-      To become a Master Scuba Diver, you’ll need to:  
-      1. **Earn Five PADI Specialty Diver Certifications**  
-         - Choose from a wide range of specialties, such as Deep Diving, Wreck Diving, Night Diving, Underwater Photography, and more.  
-      2. **Complete the PADI Rescue Diver Course**  
-         - Develop advanced safety and emergency response skills to assist others and manage diving situations.  
-      3. **Log at Least 50 Dives**  
-         - Gain extensive experience through open water dives in various environments and conditions.  
-      
-      ---
-      
-      #### **Why Become a Master Scuba Diver?**  
-      - **Recognition**: Achieve the highest level of recreational diving certification.  
-      - **Skill Mastery**: Hone your diving skills and broaden your expertise across multiple specialties.  
-      - **Personal Achievement**: Challenge yourself and reach a milestone in your diving journey.  
-      - **Global Respect**: The Master Scuba Diver rating is recognized and respected worldwide.  
-      
-      ---
-      
-      #### **Course Requirements**  
-      - **Age**: Minimum age is 12 years for Junior Master Scuba Diver and 15 years for Master Scuba Diver.  
-      - **Certifications**: Must hold PADI Advanced Open Water Diver and PADI Rescue Diver certifications (or equivalent from another agency).  
-      - **Diving Experience**: Logged a minimum of 50 dives.  
-      
-      ---
-      
-      #### **What’s Included**  
-      - Guidance and mentorship from experienced instructors.  
-      - Access to a wide range of specialty courses.  
-      - Certification fees and recognition materials upon completion.  
-      
-      ---
-      
-      #### **Duration and Cost**  
-      - The time required to achieve Master Scuba Diver certification varies depending on your schedule and the specialties you choose.  
-      - Costs depend on the specialties and number of dives required, typically ranging from $500 to $1,500.  
-      
-      ---
-      
-      #### **Why Choose Us?**  
-      At our dive center, we provide personalized guidance to help you achieve your Master Scuba Diver rating. With access to diverse dive sites, experienced instructors, and state-of-the-art equipment, we ensure a rewarding and enjoyable experience.  
-      
-      ---
-      
-      #### **Take Your Diving to the Next Level!**  
-      The **PADI Master Scuba Diver Course** is a testament to your dedication, skill, and love for diving. Embark on the journey to becoming one of the elite in the diving community. Adventure awaits beneath the surface!  </p></main> <footer class="main-footer">
-         <div class="container bob">
-           <div id="contacts" class="footer">
-             <p class="foottop">Contact us</p>
-             
-             <address>
-                 <p>E-mail:</p> <a class="a" href="mailto:etumanov77@gmail">etumanov77@gmail.com</a>
-                 <img src=".\images\phone.jpg"><a class="a" href="tel:+79622923791">Phone: +79622923791</a>
-                 <a  href="https://maps.app.goo.gl/HhNe84gCzap5n8RT8">
-                   <img src="images\shopmap.png" alt="Открыть Google">
-                 Goole map</a>
-                 <a class="a" aria-label="WhatsApp" href="https://wa.me/79622923791">
-                     <img alt="Chat on WhatsApp" src="images\watson.jpg"/> WhatsApp
-                 </a>
-      
-               </address>
-               <p class="as">&copy; 2025 Diving in Coron</p>
-           </div>
-       
-           <div class="img-cont">
-               <img src=".\image\1721383789570.jpeg" alt="Optik Logo">
-           </div>
-       
-           <div class="bod">
-             <a class="dno" href="Jekky-shop.html">Coron Palawan</a>
-             
-             <a class="dno" href="catalog-sunglasses-jekky.html">Choose couse</a>
-             <a class="dno" href="Contact-lens-soflens.html">Choose the diving sait</a>
-             <a class="dno" href="color-lens-hera.html">All about us</a>
-             <a class="dno" href="#hop">Come to the top</a>
-             
-             
-         </div>
-       </div>
-       
-      
-      </footer>
-   </body></html>
+        <section class="scubasection">
+            <h2 class="scubadiver">Course Structure</h2>
+            <div class="pich">
+                <div class="kruch">
+                    <p>The PADI Master Scuba Diver program includes:</p>
+                    <ol>
+                        <li>Completion of 5 PADI Specialty Courses</li>
+                        <li>Logged dives requirement (50 dives)</li>
+                        <li>Emergency and rescue skill development</li>
+                    </ol>
+                </div>
+                <div class="kich"><img class="courssection" src="images/course_advanced.webp" alt="Scuba training session"></div>
+            </div>
+        </section>
+
+        <section class="scubasection">
+            <h2 class="scubadiver">Course Pricing</h2>
+            <p>The course fee is <strong>$900</strong>, which includes:</p>
+            <ul style="display:grid; text-align:center;text-decoration: underline;">
+                <li>All training materials</li>
+                <li>Equipment rental</li>
+                <li>Certification fee</li>
+            </ul>
+        </section>
+
+        <section class="scubasection">
+            <h2 class="scubadiver">Enroll Today</h2>
+            <p class="wreckp">Ready to become a Master Scuba Diver? Contact us today to book your spot!</p>
+        </section>
+        <section>
+            <img class="animation" src=".\images\diver-woman.png">
+        </section>
+    </main>
+    <div style="margin-top:30px; text-align:center;" id="carousel-container">
+        <div id="image-container">
+            <img class="carousel-image" id="photo1" src=".\images\divers14.png." alt="Image 1">
+            <img class="carousel-image" id="photo2" src=".\images\corals2.png" alt="Image 2">
+            <img class="carousel-image" id="photo3" src="./images/course advance.webp" alt="Image 3">
+            <img class="carousel-image" id="photo4" src="./images/course open water.webp" alt="Image 4">
+            <img class="carousel-image" id="photo5" src="./images/palawan diving.webp" alt="Image 5">
+            <img class="carousel-image" id="photo6" src="./images\DALL·E 2025-01-29 17.35.16 - A male and a female scuba diver preparing their equipment before underwater training. They are on a boat or near the shore, wearing wetsuits and setti.webp" alt="Image 6">
+        </div>
+    </div>
+    
+    <footer class="main-footer">
+        <div class="container bob">
+            <div id="contacts" class="footer">
+                <p class="foottop">Contact us</p>
+                <address>
+                    <p class="wreckp">E-mail:</p> <a class="a" href="mailto:etumanov77@gmail">etumanov77@gmail.com</a>
+                    <img src="./images/phone.jpg"><a class="a" href="tel:+79622923791">Phone: +79622923791</a>
+                    <a href="https://maps.app.goo.gl/HhNe84gCzap5n8RT8">
+                        <img src="images/shopmap.png" alt="Google Map">
+                        Google Map
+                    </a>
+                    <a class="a" aria-label="WhatsApp" href="https://wa.me/79622923791">
+                        <img alt="Chat on WhatsApp" src="images/watson.jpg"/> WhatsApp
+                    </a>
+                </address>
+                <p class="as">&copy; 2025 Diving in Coron</p>
+            </div>
+            <div class="img-cont">
+                <img src=".\images\diving2.svg" width="100" height="100" alt="Optik Logo">
+            </div>
+            <div class="bod">
+                <a class="dno" href="Jekky-shop.html">Coron Palawan</a>
+                <a class="dno" href="catalog-sunglasses-jekky.html">Choose Course</a>
+                <a class="dno" href="Contact-lens-soflens.html">Choose the Diving Site</a>
+                <a class="dno" href="color-lens-hera.html">All About Us</a>
+                <a class="dno" href="#hop">Come to the Top</a>
+            </div>
+        </div>
+    </footer>
+    <script src="coron.js"></script>
+</body>
+</html>

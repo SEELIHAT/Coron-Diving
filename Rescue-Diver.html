@@ -1,124 +1,167 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  
-
-<meta name="description" content="">
-<meta name="keywords" content="">
-  <meta name="author" content="Евгений">
-  
-  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coron-diving</title>
- 
-    <link rel="stylesheet" href="jekky.css">
-<link rel ="shortcut icon" href=".\image\jekkytiga.svg" width="100"height="100" type="image/png">
-	
- 
+    <meta name="description" content="Enhance your scuba diving skills with the PADI Rescue Diver Course. Be prepared for emergency situations underwater.">
+    <meta name="keywords" content="PADI, Rescue Diver Course, Scuba Diving Safety">
+    <title>PADI Rescue Diver Course</title>
+    <link rel="stylesheet" href="palawan.css">
+    <script src="coron.js" defer></script>
+    <link rel="shortcut icon" href="./images/diving.svg" width="150" height="150" type="image/png">
+    <script> let currentSlide = 1;
+      let slideInterval;
+      
+      document.addEventListener("DOMContentLoaded", function () {
+      startSlideShow(); // Start the slideshow when the DOM is loaded
+      });
+      
+      function startSlideShow() {
+      slideInterval = setInterval(function () {
+          changeSlide(1); // Change to the next slide every 3 seconds
+      }, 2000);
+      }
+      
+      function stopSlideShow() {
+      clearInterval(slideInterval); // Stop the slideshow
+      }
+      
+      function changeSlide(n) {
+      showSlide(currentSlide += n);
+      }
+      
+      function showSlide(n) {
+      const slides = document.getElementsByClassName("carousel-image");
+      
+      if (n > slides.length) {
+          currentSlide = 1;
+      }
+      
+      if (n < 1) {
+          currentSlide = slides.length;
+      }
+      
+      const transformValue = -100 * (currentSlide - 1) + "%";
+      document.getElementById("image-container").style.transform = "translateX(" + transformValue + ")";
+      }
+      </script>
 </head>
+<body>
+    <header style="height:10%;" class="header2">
+        <h1>PADI Rescue Diver Course</h1>
+        <nav class="nav"><img class="navimg" src="images/line.png"><a class="nava" href="">Home</a></nav>
+        <aside>
+            <a class="asidea" href="">Order trip</a><a class="asidea" href="">Contact us</a>
+        </aside>
+    </header>
 
+    <main class="padicourse">
+      <section class="scubaflex keep">
+         <p class="courseup">Look the film about our course Padi</p>
+        <a href=""> <img class="courseimg" src="images/diving1.webp" alt="Scuba diver underwater"></a>
+         <h2>Your Journey to the Underwater World Starts Here</h2>
+     </section>
 
+        <section class="scubasection">
+            <h2 class="scubadiver">About the Course</h2>
+            <p class="wreckp">The PADI Rescue Diver Course is designed to improve your awareness and skills in handling emergency situations. This course is essential for divers looking to enhance their confidence and ability to assist others in need.</p>
+        </section>
 
-<body  class="first">
-    <header class="header"><aside></aside></header><main><p>### Rescue Diver Course (PADI)  
+        <section class="scubasection">
+            <div class="pich">
+                <div style="margin:auto;">
+                    <h2 class="scubadiver">What You Will Learn</h2>
+                    <ul class="dich">
+                        <li>Self-rescue techniques</li>
+                        <li>Recognizing and managing stress in other divers</li>
+                        <li>Emergency response strategies</li>
+                        <li>Rescue exercises in various underwater scenarios</li>
+                    </ul>
+                </div>
+                <div class="kich"><img class="courssection" src="images/rescue-diving.webp" alt="Rescue diving training"></div>
+            </div>
+        </section>
 
-      The **PADI Rescue Diver Course** is one of the most rewarding and transformative scuba diving courses available. Designed to make you a more confident and capable diver, this course prepares you to prevent and manage diving emergencies, assist others, and enhance safety in the water.  
+        <section class="scubasection">
+            <h2 class="scubadiver">Course Structure</h2>
+            <div class="pich">
+                <div class="kruch">
+                    <p>The PADI Rescue Diver Course consists of three main phases:</p>
+                    <ol>
+                        <li>Theory and knowledge development</li>
+                        <li>Practical rescue exercises</li>
+                        <li>Open water rescue scenarios</li>
+                    </ol>
+                </div>
+                <div class="kich"><img class="courssection" src="images/rescue-course.webp" alt="Rescue training session"></div>
+            </div>
+        </section>
+
+        <section class="scubasection">
+            <h2 class="scubadiver">Course Pricing</h2>
+            <p>The course fee is <strong>$500</strong>, which includes:</p>
+            <ul style="display:grid; text-align:center; text-decoration: underline;">
+                <li>All training materials</li>
+                <li>Equipment rental</li>
+                <li>Certification fee</li>
+            </ul>
+        </section>
+
+        <section class="scubasection">
+            <h2 class="scubadiver">Enroll Today</h2>
+            <p class="wreckp">Ready to enhance your diving safety skills? Contact us today to book your spot in the next course!</p>
+        </section>
+        <section><img  class="animation" src=".\images\diver-woman.png"></section></main>
+
+        <div style="margin-top:30px; text-align:center;" id="carousel-container">
+            <div id="image-container">
+                <img class="carousel-image" id="photo1" src=".\images\divers10.png" alt="Image 1">
+                <img class="carousel-image" id="photo2" src=".\images\corals5.png" alt="Image 2">
+                <img class="carousel-image" id="photo3" src="./images/course advance.webp" alt="Image 3">
+                <img class="carousel-image" id="photo4" src="./images/course open water.webp" alt="Image 4">
+                <img class="carousel-image" id="photo5" src="./images/palawan diving.webp" alt="Image 5">
+                <img class="carousel-image" id="photo6" src=".\images\divers19.webp" alt="Image 6">
+            </div>
+        </div>
+    
+
+    <footer class="main-footer">
+        <div class="container bob">
+          <div id="contacts" class="footer">
+            <p class="foottop">Contact us</p>
+            
+            <address>
+                <p class="wreckp">E-mail:</p> <a class="a" href="mailto:etumanov77@gmail">etumanov77@gmail.com</a>
+                <img src=".\images\phone.jpg"><a class="a" href="tel:+79622923791">Phone: +79622923791</a>
+                <a  href="https://maps.app.goo.gl/HhNe84gCzap5n8RT8">
+                  <img src="images\shopmap.png" alt="Открыть Google">
+                Goole map</a>
+                <a class="a" aria-label="WhatsApp" href="https://wa.me/79622923791">
+                    <img alt="Chat on WhatsApp" src="images\watson.jpg"/> WhatsApp
+                </a>
+     
+              </address>
+              <p class="as">&copy; 2025 Diving in Coron</p>
+          </div>
       
-      ---
+          <div class="img-cont">
+              <img src=".\images\diving2.svg"width="100" height="100" alt="Optik Logo">
+          </div>
       
-      #### **What You’ll Learn**  
-      The Rescue Diver Course combines knowledge development, in-water training, and practical scenarios to build your skills and confidence. Key topics include:  
+          <div class="bod">
+            <a class="dno" href="Jekky-shop.html">Coron Palawan</a>
+            
+            <a class="dno" href="catalog-sunglasses-jekky.html">Choose couse</a>
+            <a class="dno" href="Contact-lens-soflens.html">Choose the diving sait</a>
+            <a class="dno" href="color-lens-hera.html">All about us</a>
+            <a class="dno" href="#hop">Come to the top</a>
+            
+            
+        </div>
+      </div>
       
-      1. **Self-Rescue**  
-         - Refine your own diving skills to prevent potential issues and respond to emergencies effectively.  
-      
-      2. **Recognizing and Managing Stress in Others**  
-         - Learn to identify stress in fellow divers and take action before it escalates into a problem.  
-      
-      3. **Emergency Management and Equipment**  
-         - Develop strategies for managing diving emergencies and learn how to use essential rescue equipment.  
-      
-      4. **Rescue Techniques**  
-         - Practice rescuing unresponsive divers, assisting panicked divers, and responding to underwater and surface emergencies.  
-      
-      5. **Realistic Scenarios**  
-         - Apply your skills in controlled yet realistic rescue scenarios to build confidence and readiness for real-world situations.  
-      
-      ---
-      
-      #### **Why Take This Course?**  
-      - **Enhanced Confidence**: Gain the skills to handle challenging situations and assist others in need.  
-      - **Safety Awareness**: Learn to identify potential risks and take preventative measures.  
-      - **Career Advancement**: A Rescue Diver certification is a prerequisite for professional-level training like Divemaster.  
-      - **Rewarding Experience**: Many divers consider this course the most challenging yet rewarding step in their diving journey.  
-      
-      ---
-      
-      #### **Course Requirements**  
-      - **Certification Level**: Must be a certified PADI Advanced Open Water Diver (or equivalent).  
-      - **Age**: Minimum age is 12 years for Junior Rescue Diver and 15 years for Rescue Diver.  
-      - **Prerequisite**: Completion of a CPR and First Aid course (such as the Emergency First Response course) within the last 24 months.  
-      - **Health**: Participants must be in good health and comfortable in the water.  
-      
-      ---
-      
-      #### **What’s Included**  
-      - PADI Rescue Diver manual or eLearning materials.  
-      - Full scuba equipment rental.  
-      - Emergency management tools and training.  
-      - Certified instructor guidance throughout the course.  
-      - PADI Rescue Diver certification upon successful completion.  
-      
-      ---
-      
-      #### **Duration and Cost**  
-      - The course typically takes 2–3 days, depending on the schedule and location.  
-      - Costs range from $350 to $500, including training materials, equipment rental, and certification fees.  
-      
-      ---
-      
-      #### **Why Choose Us?**  
-      At our dive center, we provide experienced instructors and a supportive learning environment to help you become a confident and capable Rescue Diver. Our hands-on training emphasizes practical skills, ensuring you’re prepared for any challenge you may encounter underwater.  
-      
-      ---
-      
-      #### **Be a Diver Others Can Rely On!**  
-      The **PADI Rescue Diver Course** is more than a certification—it’s a commitment to safety and a testament to your dedication as a diver. Expand your skills, enhance your confidence, and become a true underwater hero.  </p></main>
-      <footer class="main-footer">
-         <div class="container bob">
-           <div id="contacts" class="footer">
-             <p class="foottop">Contact us</p>
-             
-             <address>
-                 <p>E-mail:</p> <a class="a" href="mailto:etumanov77@gmail">etumanov77@gmail.com</a>
-                 <img src=".\images\phone.jpg"><a class="a" href="tel:+79622923791">Phone: +79622923791</a>
-                 <a  href="https://maps.app.goo.gl/HhNe84gCzap5n8RT8">
-                   <img src="images\shopmap.png" alt="Открыть Google">
-                 Goole map</a>
-                 <a class="a" aria-label="WhatsApp" href="https://wa.me/79622923791">
-                     <img alt="Chat on WhatsApp" src="images\watson.jpg"/> WhatsApp
-                 </a>
-      
-               </address>
-               <p class="as">&copy; 2025 Diving in Coron</p>
-           </div>
-       
-           <div class="img-cont">
-               <img src=".\image\1721383789570.jpeg" alt="Optik Logo">
-           </div>
-       
-           <div class="bod">
-             <a class="dno" href="Jekky-shop.html">Coron Palawan</a>
-             
-             <a class="dno" href="catalog-sunglasses-jekky.html">Choose couse</a>
-             <a class="dno" href="Contact-lens-soflens.html">Choose the diving sait</a>
-             <a class="dno" href="color-lens-hera.html">All about us</a>
-             <a class="dno" href="#hop">Come to the top</a>
-             
-             
-         </div>
-       </div>
-       
-      
-      </footer></body></html>
+     
+     </footer>
+     <script src="coron.js"></script>
+</body>
+</html>

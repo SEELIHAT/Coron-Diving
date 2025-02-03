@@ -1,123 +1,158 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  
-
-<meta name="description" content="">
-<meta name="keywords" content="">
-  <meta name="author" content="Евгений">
-  
-  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coron-diving</title>
- 
-    <link rel="stylesheet" href="jekky.css">
-<link rel ="shortcut icon" href=".\image\jekkytiga.svg" width="100"height="100" type="image/png">
-	
- 
+    <meta name="description" content="Refresh your scuba diving skills with the PADI Scuba Review course. Get back underwater with confidence!"><meta name="keywords" content="PADI, Scuba Review, Refresher Course, Underwater Skills">
+    <title>PADI Scuba Review Course</title>
+    <link rel="stylesheet" href="palawan.css">
+    <script src="coron.js" defer></script>
+    <link rel ="shortcut icon" href="./images/diving.svg" width="150" height="150" type="image/png">
+    <script> let currentSlide = 1;
+      let slideInterval;
+      
+      document.addEventListener("DOMContentLoaded", function () {
+      startSlideShow(); // Start the slideshow when the DOM is loaded
+      });
+      
+      function startSlideShow() {
+      slideInterval = setInterval(function () {
+          changeSlide(1); // Change to the next slide every 3 seconds
+      }, 2000);
+      }
+      
+      function stopSlideShow() {
+      clearInterval(slideInterval); // Stop the slideshow
+      }
+      
+      function changeSlide(n) {
+      showSlide(currentSlide += n);
+      }
+      
+      function showSlide(n) {
+      const slides = document.getElementsByClassName("carousel-image");
+      
+      if (n > slides.length) {
+          currentSlide = 1;
+      }
+      
+      if (n < 1) {
+          currentSlide = slides.length;
+      }
+      
+      const transformValue = -100 * (currentSlide - 1) + "%";
+      document.getElementById("image-container").style.transform = "translateX(" + transformValue + ")";
+      }
+      </script>
 </head>
+<body>
+    <header style="height:10%;" class="header2">
+        <h1>PADI Scuba Review Course</h1>
+        <nav class="nav"><img class="navimg" src="images/line.png"><a class="nava" href="">Home</a></nav>
+        <aside>
+            <a class="asidea" href="">Order trip</a><a class="asidea" href="">Contact us</a>
+        </aside>
+    </header>
+
+    <main class="padicourse">
+      <section class="scubaflex keep">
+        <p class="courseup">Look the film about our course Padi</p>
+       <a href=""> <img class="courseimg" src="images/diving1.webp" alt="Scuba diver underwater"></a>
+        <h2>Your Journey to the Underwater World Starts Here</h2>
+    </section>
 
 
+        <section class="scubasection">
+            <h2 class="scubadiver">About the Course</h2>
+            <p class="wreckp">The PADI Scuba Review course is designed for certified divers who haven't been diving for a while and want to refresh their skills. This quick and easy refresher program will get you comfortable in the water again.</p>
+        </section>
 
-<body  class="first">
-    <header class="header"><aside></aside><h1>Scuba Rewiev Diver course</h1><h2></h2></header><main><section><p class="wreckp">### PADI Scuba Diver Course  
+        <section class="scubasection">
+            <div class="pich"><div style="margin:auto;"><h2 class="scubadiver">What You Will Refresh</h2>
+            <ul class="dich">
+                <li>Essential scuba diving safety procedures</li>
+                <li>Proper use of scuba gear</li>
+                <li>Underwater communication and hand signals</li>
+                <li>Basic diving techniques and buoyancy control</li>
+            </ul></div>
+            <div class="kich"><img class="courssection"src="images/palawan diving.webp" alt="Scuba diving equipment"></div></div>
+        </section>
 
-      The **PADI Scuba Diver Course** is the perfect choice for those who want to experience the thrill of scuba diving but have limited time for a full certification. As an entry-level program, it allows you to dive under the direct supervision of a PADI professional to a maximum depth of 12 meters (40 feet). This course is a great stepping stone toward becoming a certified Open Water Diver.  
+        <section class="scubasection">
+           <h2 class="scubadiver">Course Structure</h2>
+           <div class="pich"> <div class="kruch"> <p>The PADI Scuba Review course includes:</p>
+            <ol>
+                <li>Knowledge Refresher (Online or Classroom)</li>
+                <li>Confined Water Session to practice key skills</li>
+                <li>Optional Open Water Dive to regain confidence</li>
+            </ol></div>
+            <div class="kich"><img class="courssection" src="images/course advance.webp" alt="Scuba training session"></div></div>
+        </section>
+
+        <section class="scubasection">
+            <h2 class="scubadiver">Course Pricing</h2>
+            <p>The course fee is <strong>$150</strong>, which includes:</p>
+            <ul style="display:grid; text-align:center;text-decoration: underline;">
+                <li>Instructor-led refresher training</li>
+                <li>Equipment rental</li>
+                <li>PADI Scuba Review certificate</li>
+            </ul>
+        </section>
+
+        <section class="scubasection">
+            <h2 class="scubadiver">Enroll Today</h2>
+            <p class="wreckp">Ready to dive back in? Contact us today to schedule your PADI Scuba Review session!</p>
+        </section><section><img  class="animation" src=".\images\diver-woman.png"></section></main>
+
+        <div style="margin-top:30px; text-align:center;" id="carousel-container">
+            <div id="image-container">
+                <img style="filter:contrast(1.5) brightness(1.1);"class="carousel-image" id="photo1" src=".\images\corals7.png" alt="Image 1">
+                <img style="filter:contrast(1.5) brightness(1);" class="carousel-image" id="photo2" src=".\images\divers6.png" alt="Image 2">
+                <img class="carousel-image" id="photo3" src=".\images\divers18.webp" alt="Image 3">
+                <img class="carousel-image" id="photo4" src="./images/course open water.webp" alt="Image 4">
+                <img class="carousel-image" id="photo5" src="./images/palawan diving.webp" alt="Image 5">
+                <img class="carousel-image" id="photo6" src=".\images\corals11.png" alt="Image 6">
+            </div>
+        </div>
+    
+
+    <footer class="main-footer">
+        <div class="container bob">
+          <div id="contacts" class="footer">
+            <p class="foottop">Contact us</p>
+            
+            <address>
+                <p class="wreckp">E-mail:</p> <a class="a" href="mailto:etumanov77@gmail">etumanov77@gmail.com</a>
+                <img src=".\images\phone.jpg"><a class="a" href="tel:+79622923791">Phone: +79622923791</a>
+                <a  href="https://maps.app.goo.gl/HhNe84gCzap5n8RT8">
+                  <img src="images\shopmap.png" alt="Открыть Google">
+                Goole map</a>
+                <a class="a" aria-label="WhatsApp" href="https://wa.me/79622923791">
+                    <img alt="Chat on WhatsApp" src="images\watson.jpg"/> WhatsApp
+                </a>
+     
+              </address>
+              <p class="as">&copy; 2025 Diving in Coron</p>
+          </div>
       
-      ---
+          <div class="img-cont">
+              <img src=".\images\diving2.svg"width="100" height="100" alt="Optik Logo">
+          </div>
       
-      #### **What You’ll Learn**  
+          <div class="bod">
+            <a class="dno" href="Jekky-shop.html">Coron Palawan</a>
+            
+            <a class="dno" href="catalog-sunglasses-jekky.html">Choose couse</a>
+            <a class="dno" href="Contact-lens-soflens.html">Choose the diving sait</a>
+            <a class="dno" href="color-lens-hera.html">All about us</a>
+            <a class="dno" href="#hop">Come to the top</a>
+            
+            
+        </div>
+      </div>
       
-      The course includes three essential components designed to introduce you to the basics of scuba diving:  
-      
-      1. **Knowledge Development**  
-         - Learn the fundamentals of scuba diving, including underwater communication, equipment use, and safety practices.  
-         - Study key concepts either in-person or online through PADI eLearning materials.  
-      
-      2. **Confined Water Dives**  
-         - Practice basic skills in a controlled environment, such as a pool or shallow water.  
-         - Skills include mask clearing, regulator recovery, and buoyancy control.  
-      
-      3. **Open Water Dives**  
-         - Experience the excitement of diving in open water under the direct supervision of a PADI professional.  
-         - Complete two dives to explore the underwater world while applying the skills you’ve learned.  
-      
-      </p></section> <section><p class="wreckp">
-      
-      #### **Why Choose This Course?**  
-      - **Quick and Flexible**: Ideal for those with limited time, the course can be completed in just 1–2 days.  
-      - **Discover the Underwater World**: Gain a safe and enjoyable introduction to scuba diving.  
-      - **Pathway to Certification**: Easily upgrade to the PADI Open Water Diver certification in the future by completing additional training.  
-      
-      ---
-      
-      #### **Course Requirements**  
-      - **Age**: Minimum age is 10 years.  
-      - **Health**: Participants must be in good physical health and comfortable in the water.  
-      - **Swimming Skills**: Basic swimming ability is required.  
-      
-      ---
-      
-      #### **What’s Included**  
-      - PADI Scuba Diver manual or eLearning materials.  
-      - Full scuba equipment rental, including mask, fins, regulator, and BCD.  
-      - Certified instructor guidance throughout the course.  
-      - PADI Scuba Diver certification upon successful completion.  
-      
-      ---
-      
-      #### **Duration and Cost**  
-      - The course typically takes 1–2 days to complete, depending on your schedule.  
-      - Costs range from $200 to $400, including training materials, equipment rental, and certification fees.  
-      
-   </p></section> <section>
-      <div class="wrackdiv2">
-          <img src="images/kogyo-maru-exterior.jpg" alt="Kogyo Maru Wreck - Exterior View">
-          <img src="images/kogyo-maru-cargo.jpg" alt="Cargo Hold of the Kogyo Maru">
-          <img src="images/kogyo-maru-marine-life.jpg" alt="Marine Life at the Kogyo Maru Wreck">
-      </div></section> <section><p class="wreckp">
-      
-      #### **Why Choose Us?**  
-      At our dive center, we focus on creating a safe, enjoyable, and personalized experience for every student. With access to beautiful dive sites, high-quality equipment, and experienced instructors, you’ll have an unforgettable introduction to scuba diving.  
-      
-      ---
-      
-      #### **Start Your Underwater Journey Today!**  
-      The **PADI Scuba Diver Course** is your first step toward exploring the wonders of the underwater world. Whether you’re preparing for a tropical vacation or just curious about diving, this course is your gateway to adventure.  </p> </section></main> <footer class="main-footer">
-         <div class="container bob">
-           <div id="contacts" class="footer">
-             <p class="foottop">Contact us</p>
-             
-             <address>
-                 <p class="wreckp">E-mail:</p> <a class="a" href="mailto:etumanov77@gmail">etumanov77@gmail.com</a>
-                 <img src=".\images\phone.jpg"><a class="a" href="tel:+79622923791">Phone: +79622923791</a>
-                 <a  href="https://maps.app.goo.gl/HhNe84gCzap5n8RT8">
-                   <img src="images\shopmap.png" alt="Открыть Google">
-                 Goole map</a>
-                 <a class="a" aria-label="WhatsApp" href="https://wa.me/79622923791">
-                     <img alt="Chat on WhatsApp" src="images\watson.jpg"/> WhatsApp
-                 </a>
-      
-               </address>
-               <p class="as">&copy; 2025 Diving in Coron</p>
-           </div>
-       
-           <div class="img-cont">
-               <img src=".\image\1721383789570.jpeg" alt="Optik Logo">
-           </div>
-       
-           <div class="bod">
-             <a class="dno" href="Jekky-shop.html">Coron Palawan</a>
-             
-             <a class="dno" href="catalog-sunglasses-jekky.html">Choose couse</a>
-             <a class="dno" href="Contact-lens-soflens.html">Choose the diving sait</a>
-             <a class="dno" href="color-lens-hera.html">All about us</a>
-             <a class="dno" href="#hop">Come to the top</a>
-             
-             
-         </div>
-       </div>
-       
-      
-      </footer></body></html>
+     
+     </footer>
+     <script src="coron.js"></script>
+</body>
+</html>

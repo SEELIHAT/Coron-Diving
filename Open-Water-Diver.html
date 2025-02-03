@@ -1,123 +1,164 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  
-
-<meta name="description" content="">
-<meta name="keywords" content="">
-  <meta name="author" content="Евгений">
-  <script src="coron.js" defer></script>
-  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coron-diving</title>
- 
+    <meta name="description" content="Learn to scuba dive with PADI-certified courses. Start your underwater adventure today!">
+    <meta name="keywords" content="PADI, Scuba Diving Course, Underwater Adventure">
+    <title>PADI Open Water Diver Course</title>
     <link rel="stylesheet" href="palawan.css">
-<link rel ="shortcut icon" href=".\image\jekkytiga.svg" width="100"height="100" type="image/png">
-	
- 
+    <script src="coron.js" defer></script>
+    <link rel="shortcut icon" href="./images/diving.svg" type="image/png">
+    <script>
+        let currentSlide = 1;
+        let slideInterval;
+
+        document.addEventListener("DOMContentLoaded", function () {
+            startSlideShow(); // Start the slideshow when the DOM is loaded
+        });
+
+        function startSlideShow() {
+            slideInterval = setInterval(function () {
+                changeSlide(1); // Change to the next slide every 3 seconds
+            }, 2000);
+        }
+
+        function stopSlideShow() {
+            clearInterval(slideInterval); // Stop the slideshow
+        }
+
+        function changeSlide(n) {
+            showSlide(currentSlide += n);
+        }
+
+        function showSlide(n) {
+            const slides = document.getElementsByClassName("carousel-image");
+
+            if (n > slides.length) {
+                currentSlide = 1;
+            }
+
+            if (n < 1) {
+                currentSlide = slides.length;
+            }
+
+            const transformValue = -100 * (currentSlide - 1) + "%";
+            document.getElementById("image-container").style.transform = "translateX(" + transformValue + ")";
+        }
+    </script>
 </head>
+<body>
+<header style="height:10%;" class="header2">
+    <h1>PADI Open Water Diver Course</h1>
+    <nav class="nav"><img class="navimg" src="images/line.png"><a class="nava" href="">Home</a></nav>
+    <aside>
+        <a class="asidea" href="">Order trip</a><a class="asidea" href="">Contact us</a></aside>
+</header>
 
 
+      <main class="padicourse">
+        <section class="scubaflex keep">
+            <p class="courseup">Look the film about our course Padi</p>
+           <a href=""> <img class="courseimg" src="images/diving1.webp" alt="Scuba diver underwater"></a>
+            <h2>Your Journey to the Underwater World Starts Here</h2>
+        </section>
+    
 
-<body  class="first">
-    <header class="header"><aside></aside><h1>Open Water course in Coron</h1><h2>Stady with us diving</h2></header><main><p class="wreckp">### Open Water Diver Course (PADI)
+    <section class="scubasection">
+        <h2 class="scubadiver">About the Course</h2>
+        <p class="wreckp">The PADI Open Water Diver course is designed to introduce you to the basics of scuba diving. It is the world's most popular scuba diving course, and millions of people have started diving as certified PADI Open Water Divers.</p>
+    </section>
 
-     <section> The **PADI Open Water Diver Course** is your gateway to exploring the underwater world. As the most popular scuba diving certification worldwide, it opens the door to exciting adventures beneath the waves. Whether you’re new to diving or looking to build confidence in the water, this course provides the skills and knowledge you need to dive independently to depths of 18 meters (60 feet).
-      
-      ---
-      
-      #### **What You’ll Learn**
-      The course is designed to give you a solid foundation in diving safety, techniques, and equipment use. It typically consists of three main components:  
-      
-      1. **Knowledge Development**  
-         - Learn the principles of diving through online materials, classroom sessions, or independent study.  
-         - Topics include underwater communication, dive planning, buoyancy control, and the use of dive tables or computers.  
-      
-      2. **Confined Water Dives**  
-         - Practice essential skills in a controlled environment, such as a pool or shallow water.  
-         - Key skills include mask clearing, regulator recovery, and buoyancy techniques.  
-      
-      3. **Open Water Dives**  
-         - Put your training to the test in real-world diving scenarios under the guidance of a certified instructor.  
-         - Complete four dives to gain experience and confidence in open water.  
-      
-     </section>
-     <section>
-      
-      #### **Why Take the Course?**
-      - **Global Recognition**: A PADI Open Water certification is recognized worldwide, allowing you to dive at destinations across the globe.  
-      - **Freedom to Explore**: Once certified, you can dive with a buddy without the need for direct supervision from an instructor.  
-      - **Adventure and Discovery**: Experience the thrill of discovering vibrant coral reefs, marine life, and underwater landscapes.  
-      
-      ---
-      
-      #### **Course Requirements**
-      - **Age**: Minimum age is 10 years (Junior Open Water Diver for ages 10–14).  
-      - **Health**: Must be in good physical health and comfortable in the water. A medical questionnaire may be required.  
-      - **Swimming Skills**: Basic swimming ability is required, including a 200-meter swim and a 10-minute float.  
-      
-      ---
-      
-      #### **What’s Included**
-      - Training materials (online or printed).  
-      - Use of scuba diving equipment, including a mask, fins, regulator, BCD (Buoyancy Control Device), and tank.  
-      - Certified instructor guidance throughout the course.  
-      - PADI certification card upon successful completion.  
-      
-      ---
-      
-      #### **Duration and Cost**
-      - The course typically takes 3–4 days to complete, depending on your schedule and location.  
-      - Prices vary by dive center but usually range from $300 to $500, including equipment rental and certification fees.  
-      
-     </section><section><div class="wrackdiv2">
-      <img src="images/kogyo-maru-exterior.jpg" alt="Kogyo Maru Wreck - Exterior View">
-      <img src="images/kogyo-maru-cargo.jpg" alt="Cargo Hold of the Kogyo Maru">
-      <img src="images/kogyo-maru-marine-life.jpg" alt="Marine Life at the Kogyo Maru Wreck">
-  </div></section><section>
-      
-      #### **Why Choose Us?**
-      At our dive center, we offer professional instruction, high-quality equipment, and access to stunning dive sites. Whether you’re learning in the calm waters of a pool or exploring vibrant reefs during your open water dives, we ensure a safe and unforgettable experience.
-      
-      ---
-      
-      #### **Start Your Diving Adventure Today!**
-      Take the first step into the underwater world with the **PADI Open Water Diver Course**. It’s your ticket to discovering the beauty of the ocean and creating memories that will last a lifetime.</p></section>
-   </main> <footer class="main-footer">
-      <div class="container bob">
+    <section class="scubasection">
+        <div class="pich">
+            <div style="margin:auto;">
+                <h2 class="scubadiver">What You Will Learn</h2>
+                <ul class="dich">
+                    <li>Scuba diving equipment setup and usage</li>
+                    <li>Underwater communication and safety procedures</li>
+                    <li>Basic skills for diving in open water conditions</li>
+                    <li>Planning and executing actual dives under the supervision of a PADI Instructor</li>
+                </ul>
+            </div>
+            <div class="kich"><img class="courssection" src="images/palawan diving.webp" alt="Scuba diving equipment"></div>
+        </div>
+    </section>
+
+    <section class="scubasection">
+        <h2 class="scubadiver">Course Structure</h2>
+        <div class="pich">
+            <div class="kruch">
+                <p>The PADI Open Water Diver course consists of three main phases:</p>
+                <ol>
+                    <li>Knowledge Development (Online or Classroom)</li>
+                    <li>Confined Water Dives to practice basic scuba skills</li>
+                    <li>Open Water Dives to review your skills and explore</li>
+                </ol>
+            </div>
+            <div class="kich"><img class="courssection" src="images/course advance.webp" alt="Scuba training session"></div>
+        </div>
+    </section>
+
+    <section class="scubasection">
+        <h2 class="scubadiver">Course Pricing</h2>
+        <p>The course fee is <strong>$550</strong>, which includes:</p>
+        <ul style="display:grid; text-align:center;text-decoration: underline;">
+            <li>All required training materials</li>
+            <li>Use of scuba diving equipment during the course</li>
+            <li>PADI certification fee</li>
+        </ul>
+    </section>
+
+    <section class="scubasection">
+        <h2 class="scubadiver">Enroll Today</h2>
+        <p class="wreckp">Ready to begin your scuba diving adventure with the PADI Open Water Diver course? Contact us now to secure your spot!</p>
+    </section>
+
+    <section><img class="animation" src="./images/diver-woman.png"></section>
+</main>
+
+<div style="margin-top:30px; text-align:center;" id="carousel-container">
+    <div id="image-container">
+        <img class="carousel-image" id="photo1" src=".\images\DALL·E 2025-01-16 18.29.27 - A stunning underwater view of the Irako Maru wreck in Coron, Palawan, Philippines. The scene shows the well-preserved structure of a World War II Japa.webp" alt="Image 1">
+        <img class="carousel-image" id="photo2" src="./images\DALL·E 2025-01-29 17.35.16 - A male and a female scuba diver preparing their equipment before underwater training. They are on a boat or near the shore, wearing wetsuits and setti.webp" alt="Image 2">
+        <img class="carousel-image" id="photo3" src="./images/course advance.webp" alt="Image 3">
+        <img class="carousel-image" id="photo4" src="./images/course open water.webp" alt="Image 4">
+        <img class="carousel-image" id="photo5" src="./images/palawan diving.webp" alt="Image 5">
+        <img class="carousel-image" id="photo6" src="./images\DALL·E 2025-01-29 17.35.16 - A male and a female scuba diver preparing their equipment before underwater training. They are on a boat or near the shore, wearing wetsuits and setti.webp" alt="Image 6">
+    </div>
+</div>
+
+<footer class="main-footer">
+    <div class="container bob">
         <div id="contacts" class="footer">
-          <p class="foottop">Contact us</p>
-          
-          <address>
-              <p class="wreckp">E-mail:</p> <a class="a" href="mailto:etumanov77@gmail">etumanov77@gmail.com</a>
-              <img src=".\images\phone.jpg"><a class="a" href="tel:+79622923791">Phone: +79622923791</a>
-              <a  href="https://maps.app.goo.gl/HhNe84gCzap5n8RT8">
-                <img src="images\shopmap.png" alt="Открыть Google">
-              Goole map</a>
-              <a class="a" aria-label="WhatsApp" href="https://wa.me/79622923791">
-                  <img alt="Chat on WhatsApp" src="images\watson.jpg"/> WhatsApp
-              </a>
-   
+            <p class="foottop">Contact us</p>
+            <address>
+                <p class="wreckp">E-mail:</p> <a class="a" href="mailto:etumanov77@gmail.com">etumanov77@gmail.com</a>
+                <img src="./images/phone.jpg"><a class="a" href="tel:+79622923791">Phone: +79622923791</a>
+                <a href="https://maps.app.goo.gl/HhNe84gCzap5n8RT8">
+                    <img src="images/shopmap.png" alt="Open Google Maps">
+                    Google Maps</a>
+                <a class="a" aria-label="WhatsApp" href="https://wa.me/79622923791">
+                    <img alt="Chat on WhatsApp" src="./images/watson.jpg"/> WhatsApp
+                </a>
             </address>
             <p class="as">&copy; 2025 Diving in Coron</p>
         </div>
-    
+
         <div class="img-cont">
-            <img src=".\image\1721383789570.jpeg" alt="Optik Logo">
+            <img src="./images/diving.svg" width="100" height="100" alt="Optik Logo">
         </div>
-    
+
         <div class="bod">
-          <a class="dno" href="Jekky-shop.html">Coron Palawan</a>
-          
-          <a class="dno" href="catalog-sunglasses-jekky.html">Choose couse</a>
-          <a class="dno" href="Contact-lens-soflens.html">Choose the diving sait</a>
-          <a class="dno" href="color-lens-hera.html">All about us</a>
-          <a class="dno" href="#hop">Come to the top</a>
-          
-          
-      </div>
+            <a class="dno" href="Jekky-shop.html">Coron Palawan</a>
+            <a class="dno" href="catalog-sunglasses-jekky.html">Choose a Course</a>
+            <a class="dno" href="Contact-lens-soflens.html">Choose a Diving Site</a>
+            <a class="dno" href="color-lens-hera.html">About Us</a>
+            <a class="dno" href="#top">Back to Top</a>
+        </div>
     </div>
-    
-   
-   </footer></body></html>
+</footer>
+
+<script src="coron.js"></script>
+</body>
+</html>

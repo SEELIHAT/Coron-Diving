@@ -359,6 +359,7 @@ li{list-style-type:none;}
 
 .carousel-image {
   min-width: 100%;
+  filter:contrast(1);
   height: auto;}
   .pich{display:flex;flex-wrap:wrap;overflow:hidden;}
   .dich{display:grid;text-align:center;text-decoration: underline;}
@@ -366,5 +367,22 @@ li{list-style-type:none;}
 .kruch{display:grid; gap:10px; margin:auto;} 
 .keep{margin-top:10px;}
 .wreckp{padding:10px;}
-
+.img-cont{margin-top:20px;}
+.animation{animation-name: left; animation-duration: 7s;width:15%;height:auto; position:fixed;}
+@keyframes left{ 0% { bottom: 70%; right: 45%; opacity: 1; }
+0% { top: 10%; left: 15%; opacity: 1; }
+20% { top: 20%; left: 35%; opacity: 1; }
+30% { top: 30%; left: 45%; opacity: 1; }
+40% { top: 40%; left: 65%; opacity: 1; }
+50% { top: 50%; left: 75%; opacity: 1; }
+60% { top: 60%; left: 65%; opacity: 0.8; }
+70% { top: 70%; left: 55%; opacity: 0.7; }
+80% { top: 80%; left: 45%; opacity: 0.6; }
+90% { top: 90%; left: 35%; opacity: 0.5; }
+100% { bottom: 90%; right: 15%; opacity: 0; }
+}
+.warfly{z-index:50;}
+.warbomb{z-index:50;}
+.warwreck{z-index:50;}
+.warfair{z-index:50;}
 

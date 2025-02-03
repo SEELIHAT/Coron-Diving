@@ -1,128 +1,167 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  
-
-<meta name="description" content="">
-<meta name="keywords" content="">
-  <meta name="author" content="Евгений">
-  
-  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coron-diving</title>
- 
-    <link rel="stylesheet" href="jekky.css">
-<link rel ="shortcut icon" href=".\image\jekkytiga.svg" width="100"height="100" type="image/png">
-	
- 
+    <meta name="description" content="Learn essential first aid and CPR skills with the PADI Emergency First Response (EFR) course. Be prepared for emergencies today!">
+    <meta name="keywords" content="PADI, Emergency First Response, First Aid, CPR, Rescue Training">
+    <title>PADI Emergency First Response Course</title>
+    <link rel="stylesheet" href="palawan.css">
+    <script src="coron.js" defer></script>
+    <link rel="shortcut icon" href="./images/diving2.svg" width="150" height="150" type="image/png">
+    <script> let currentSlide = 1;
+      let slideInterval;
+      
+      document.addEventListener("DOMContentLoaded", function () {
+      startSlideShow(); // Start the slideshow when the DOM is loaded
+      });
+      
+      function startSlideShow() {
+      slideInterval = setInterval(function () {
+          changeSlide(1); // Change to the next slide every 3 seconds
+      }, 2000);
+      }
+      
+      function stopSlideShow() {
+      clearInterval(slideInterval); // Stop the slideshow
+      }
+      
+      function changeSlide(n) {
+      showSlide(currentSlide += n);
+      }
+      
+      function showSlide(n) {
+      const slides = document.getElementsByClassName("carousel-image");
+      
+      if (n > slides.length) {
+          currentSlide = 1;
+      }
+      
+      if (n < 1) {
+          currentSlide = slides.length;
+      }
+      
+      const transformValue = -100 * (currentSlide - 1) + "%";
+      document.getElementById("image-container").style.transform = "translateX(" + transformValue + ")";
+      }
+      </script>
 </head>
+<body>
+    <header style="height:10%;" class="header2">
+        <h1>PADI Emergency First Response Course</h1>
+        <nav class="nav"><img class="navimg" src="images/line.png"><a class="nava" href="">Home</a></nav>
+        <aside>
+            <a class="asidea" href="">Order Course</a><a class="asidea" href="">Contact us</a>
+        </aside>
+    </header>
 
+    <main class="padicourse">
+      <section class="scubaflex keep">
+        <p class="courseup">Look the film about our course Padi</p>
+       <a href=""> <img class="courseimg" src="images/diving1.webp" alt="Scuba diver underwater"></a>
+        <h2>Your Journey to the Underwater World Starts Here</h2>
+    </section> 
 
+        <section class="scubasection">
+            <h2 class="scubadiver">About the Course</h2>
+            <p class="wreckp">The PADI Emergency First Response (EFR) course equips you with essential first aid and CPR skills. This course is suitable for divers and non-divers alike, providing vital training for handling medical emergencies.</p>
+        </section>
 
-<body  class="first">
-    <header class="header"><aside></aside></header><main><p class="wreckp">### Emergency First Response Course (EFR)
+        <section class="scubasection">
+            <div class="pich">
+                <div style="margin:auto;">
+                    <h2 class="scubadiver">What You Will Learn</h2>
+                    <ul class="dich">
+                        <li>Primary and Secondary Care techniques</li>
+                        <li>CPR and AED usage</li>
+                        <li>Handling injuries and illnesses</li>
+                        <li>Emergency action planning</li>
+                    </ul>
+                </div>
+                <div class="kich"><img class="courssection" src="images/efr-training.webp" alt="First Aid Training"></div>
+            </div>
+        </section>
 
-      The **Emergency First Response (EFR) Course** is a comprehensive, non-diving program designed to teach you essential first aid and CPR skills. Whether you are a diver or simply someone who wants to be prepared for emergencies, this course equips you with the skills to respond to medical situations and provide immediate care in critical situations. It is an essential course for divers, as well as a great life skill for everyone.
+        <section class="scubasection">
+            <h2 class="scubadiver">Course Structure</h2>
+            <div class="pich">
+                <div class="kruch">
+                    <p>The EFR course consists of three main components:</p>
+                    <ol>
+                        <li>Theory and knowledge development</li>
+                        <li>Hands-on practical exercises</li>
+                        <li>Final scenario-based assessment</li>
+                    </ol>
+                </div>
+                <div class="kich"><img class="courssection" src="images/efr-scenario.webp" alt="Emergency response training"></div>
+            </div>
+        </section>
+
+        <section class="scubasection">
+            <h2 class="scubadiver">Course Pricing</h2>
+            <p>The course fee is <strong>$250</strong>, which includes:</p>
+            <ul style="display:grid; text-align:center;text-decoration: underline;">
+                <li>All training materials</li>
+                <li>CPR and first aid practice equipment</li>
+                <li>Certification fee</li>
+            </ul>
+        </section>
+
+        <section class="scubasection">
+            <h2 class="scubadiver">Enroll Today</h2>
+            <p class="wreckp">Be ready to assist in emergencies. Enroll in our PADI Emergency First Response course today!</p>
+        </section>
+        <section><img  class="animation" src=".\images\diver-woman.png"></section></main>
+
+        <div style="margin-top:30px; text-align:center;" id="carousel-container">
+            <div id="image-container">
+                <img class="carousel-image" id="photo1" src="./images\DALL·E 2025-01-29 17.35.16 - A male and a female scuba diver preparing their equipment before underwater training. They are on a boat or near the shore, wearing wetsuits and setti.webp" alt="Image 1">
+                <img class="carousel-image" id="photo2" src="./images\DALL·E 2025-01-29 17.35.16 - A male and a female scuba diver preparing their equipment before underwater training. They are on a boat or near the shore, wearing wetsuits and setti.webp" alt="Image 2">
+                <img class="carousel-image" id="photo3" src="./images/course advance.webp" alt="Image 3">
+                <img class="carousel-image" id="photo4" src="./images/course open water.webp" alt="Image 4">
+                <img class="carousel-image" id="photo5" src="./images/palawan diving.webp" alt="Image 5">
+                <img class="carousel-image" id="photo6" src="./images\DALL·E 2025-01-29 17.36.19 - A male and a female scuba diver practicing underwater training. They are submerged in clear blue water, wearing full scuba gear including wetsuits, ta.webp" alt="Image 6">
+            </div>
+        </div>
+    
+
+    <footer class="main-footer">
+        <div class="container bob">
+          <div id="contacts" class="footer">
+            <p class="foottop">Contact us</p>
+            
+            <address>
+                <p class="wreckp">E-mail:</p> <a class="a" href="mailto:etumanov77@gmail">etumanov77@gmail.com</a>
+                <img src=".\images\phone.jpg"><a class="a" href="tel:+79622923791">Phone: +79622923791</a>
+                <a  href="https://maps.app.goo.gl/HhNe84gCzap5n8RT8">
+                  <img src="images\shopmap.png" alt="Открыть Google">
+                Goole map</a>
+                <a class="a" aria-label="WhatsApp" href="https://wa.me/79622923791">
+                    <img alt="Chat on WhatsApp" src="images\watson.jpg"/> WhatsApp
+                </a>
+     
+              </address>
+              <p class="as">&copy; 2025 Diving in Coron</p>
+          </div>
       
-      ---
+          <div class="img-cont">
+              <img src=".\images\diving2.svg"width="100" height="100" alt="Optik Logo">
+          </div>
       
-      #### **What You’ll Learn**
+          <div class="bod">
+            <a class="dno" href="Jekky-shop.html">Coron Palawan</a>
+            
+            <a class="dno" href="catalog-sunglasses-jekky.html">Choose couse</a>
+            <a class="dno" href="Contact-lens-soflens.html">Choose the diving sait</a>
+            <a class="dno" href="color-lens-hera.html">All about us</a>
+            <a class="dno" href="#hop">Come to the top</a>
+            
+            
+        </div>
+      </div>
       
-      The EFR course is broken down into key areas to provide you with a complete and thorough understanding of first aid and emergency response:
-      
-      1. **Primary Care (CPR)**
-         - Learn how to perform CPR effectively for adults, children, and infants in emergency situations.
-         - Understand the proper techniques for chest compressions, rescue breaths, and use of an Automated External Defibrillator (AED).
-      
-      2. **Secondary Care (First Aid)**
-         - Gain knowledge on how to handle injuries such as cuts, burns, sprains, and fractures.
-         - Learn how to treat medical conditions like shock, allergic reactions, and heat-related illnesses.
-      
-      3. **Care for Children and Infants**
-         - Receive specialized training for first aid and CPR for infants and children, making it a useful course for parents, caregivers, and those working with young children.
-      
-      4. **CPR with an AED**
-         - Learn how to use an AED (Automated External Defibrillator) to assist individuals who are in cardiac arrest.
-      
-      ---
-      
-      #### **Why Take This Course?**
-      
-      - **Life-Saving Skills**: Acquire the skills needed to help in medical emergencies, potentially saving lives.
-      - **Confidence in Emergencies**: Learn to stay calm and take effective action when accidents happen.
-      - **Workplace Requirements**: Many jobs require employees to be trained in first aid and CPR, making this course a valuable asset in various professions.
-      - **Diving Essential**: For divers, it’s essential to know how to respond to diving emergencies, ensuring safety for both yourself and others.
-      - **Certification**: Upon successful completion, you will receive an internationally recognized Emergency First Response certification.
-      
-      ---
-      
-      #### **Course Requirements**
-      
-      - **Age**: Minimum age is 10 years old.
-      - **No prerequisites**: No prior medical experience is necessary.
-      - **Health**: Participants should be in good health and capable of performing basic physical tasks.
-      
-      ---
-      
-      #### **What’s Included**
-      
-      - **Emergency First Response manual** or eLearning materials.
-      - **CPR and First Aid training** under the guidance of a certified EFR instructor.
-      - **Certification** upon successful completion of the course.
-      - **Optional CPR & First Aid gear** for practice.
-      
-      ---
-      
-      #### **Duration and Cost**
-      
-      - The course usually takes **1 full day** to complete (around 6-8 hours).
-      - **Costs range** from **$100 to $150**, depending on the location and provider. This includes materials, training, and certification.
-      
-      ---
-      
-      #### **Why Choose Us?**
-      
-      Our instructors are experienced professionals who are committed to providing a supportive and hands-on learning environment. We offer quality training that ensures you feel confident in applying your skills in real-life emergencies. Our courses are tailored to give you a clear understanding of life-saving techniques, making sure you’re always prepared to act in any situation.
-      
-      ---
-      
-      #### **Be Prepared to Save a Life!**
-      
-      The **Emergency First Response Course** is a practical and essential course for anyone who wants to learn how to handle emergency situations with confidence. Whether you’re a diver, a parent, or someone interested in emergency preparedness, this course equips you with the skills to help those in need. Join today and make a difference in someone’s life!</p></main> <footer class="main-footer">
-         <div class="container bob">
-           <div id="contacts" class="footer">
-             <p class="foottop">Contact us</p>
-             
-             <address>
-                 <p class="wreckp">E-mail:</p> <a class="a" href="mailto:etumanov77@gmail">etumanov77@gmail.com</a>
-                 <img src=".\images\phone.jpg"><a class="a" href="tel:+79622923791">Phone: +79622923791</a>
-                 <a  href="https://maps.app.goo.gl/HhNe84gCzap5n8RT8">
-                   <img src="images\shopmap.png" alt="Открыть Google">
-                 Goole map</a>
-                 <a class="a" aria-label="WhatsApp" href="https://wa.me/79622923791">
-                     <img alt="Chat on WhatsApp" src="images\watson.jpg"/> WhatsApp
-                 </a>
-      
-               </address>
-               <p class="as">&copy; 2025 Diving in Coron</p>
-           </div>
-       
-           <div class="img-cont">
-               <img src=".\image\1721383789570.jpeg" alt="Optik Logo">
-           </div>
-       
-           <div class="bod">
-             <a class="dno" href="Jekky-shop.html">Coron Palawan</a>
-             
-             <a class="dno" href="catalog-sunglasses-jekky.html">Choose couse</a>
-             <a class="dno" href="Contact-lens-soflens.html">Choose the diving sait</a>
-             <a class="dno" href="color-lens-hera.html">All about us</a>
-             <a class="dno" href="#hop">Come to the top</a>
-             
-             
-         </div>
-       </div>
-       
-      
-      </footer></body></html>
+     
+     </footer>
+     <script src="coron.js"></script>
+</body>
+</html>
