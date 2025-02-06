@@ -385,4 +385,6 @@ li{list-style-type:none;}
 .warbomb{z-index:50;}
 .warwreck{z-index:50;}
 .warfair{z-index:50;}
-
+.wreckp{color:white;}
+.underscuba{font-size: 15px; color:black;padding:10px; font-style:italic; font-family: 'Segoe UI', sans-serif;}
+.nav{height:30px;}
