@@ -289,7 +289,8 @@ img .imgmaruko{width:220px;margin:auto;height:250px;margin:auto;}
  .wreckp2{color:white;text-align:center;font-size:20px;font-style: italic; font-family:'Franklin Gothic Medium', sans-serif;}                  
  aside{position:fixed; top:10%;right:30px; display:grid;gap:15px;}
  .aside{position:fixed; top:10%;right:30px; display:grid;gap:15px;}
- .asidea{width:80px;height:30px; background-color:black; color:white; border-radius:5px 20px 5px 20px;text-align:center; }
+ .asidea{width:80px;height:30px; background-color:black; color:white; border-radius:5px 20px 5px 20px;text-align:center;border:3px solid rgb(79, 69, 13); text-decoration:none;}
+ a .asidea{width:80px;height:30px; background-color:black; color:white; border-radius:5px 20px 5px 20px;text-align:center;border:3px solid rgb(79, 69, 13); text-decoration:none;}
 .asidea2{.asidea{width:80px;height:30px; background-color:black; color:white; border-radius:5px 20px 5px 20px;text-align:center; }}
  @keyframes fly {
   0% { bottom: 70%; right: 30%; opacity: 1; }
@@ -333,17 +334,18 @@ img .imgmaruko{width:220px;margin:auto;height:250px;margin:auto;}
 .courssection{width:220px;}
 .nav{display:grid;}
 .navimg{width:10%;height:5%; }
-.nava{color:white;font-size:20px; color:white;margin-top:-50px;margin-left:30px;}
+.nava{color:white;font-size:20px; color:white;margin-top:-50px;margin-left:10%;}
 .courseup{text-align:left;transform: rotate(45deg) translateY(47px) translateX(44px);font-size: 20px;color:white; 
-  text-shadow:5px 5px 1px black,
--5px -5px 1px black;display:flex;flex-wrap:wrap;}
+  text-shadow:2px 2px 1px black,
+-2px -2px 1px black;display:flex;flex-wrap:wrap;}
 .courseimg{width:100px;height:80px;border:5px solid blue;border-radius:35px 15px 35px 15px;padding:5px;margin-left:-200px;}
 main .padicourse{gap:10px;}
 .gallery-grid{display:flex;flex-wrap: wrap; overflow: hidden;}
 .gallery-grid img{width:220px;height:auto; margin:auto;}
 .scubasection {margin-top:10px;}
 li{list-style-type:none;}
-
+.mini{position:relative;padding:10px;}
+.bot{padding:10px;}
 #carousel-container {
   position: relative;
   overflow: hidden;
@@ -358,9 +360,9 @@ li{list-style-type:none;}
 }
 
 .carousel-image {
-  min-width: 100%;
+  width: 100%;
   filter:contrast(1);
-  height: auto;}
+  height:auto;}
   .pich{display:flex;flex-wrap:wrap;overflow:hidden;}
   .dich{display:grid;text-align:center;text-decoration: underline;}
   .kich{margin:auto;}
@@ -388,3 +390,11 @@ li{list-style-type:none;}
 .wreckp{color:white;}
 .underscuba{font-size: 15px; color:black;padding:10px; font-style:italic; font-family: 'Segoe UI', sans-serif;}
 .nav{height:30px;}
+.order{display:none;}
+.nero{background-image: url('images/patty101.png');
+  background-size: cover; /* Makes sure the image covers the entire background */
+   background-position:center 1px; /* Centers the image */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.mas li{text-decoration: underline;font-weight: bold;}

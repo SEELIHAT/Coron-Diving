@@ -1,7 +1,7 @@
  
 function changeDisplay() {
     document.getElementById('myDiv').style.display = 'grid';
-    document.getElementById('myDiv').style.color = 'yellow';
+    document.getElementById('myDiv').style.color = 'white';
     document.getElementById('myDiv').style.fontStyle = 'italic';
     document.getElementById('myDiv').style.fontWidth = 'bold';
     document.getElementById('myDiv').style.fontSize = '20'+'px';
@@ -56,3 +56,20 @@ function changeDisplay() {
     const transformValue = -100 * (currentSlide - 1) + "%";
     document.getElementById("image-container").style.transform = "translateX(" + transformValue + ")";
     }
+    
+    function sendMessageToWhatsApp(phoneNumber, pId) {
+        var message = "Hello, I would like to order course.";
+      
+        // Get the text content from the specified <p> element
+        var additionalMessage = document.getElementById(pId).textContent;
+      
+        // Append the additional message to the main message
+        message += " " + additionalMessage;
+      
+        // Replace spaces with %20 for URL
+        message = encodeURIComponent(message);
+      
+        var url = "https://wa.me/" + phoneNumber + "?text=" + message;
+      
+        window.open(url, '_blank');
+      }

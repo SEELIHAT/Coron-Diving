@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Refresh your scuba diving skills with the PADI Scuba Review course. Get back underwater with confidence!"><meta name="keywords" content="PADI, Scuba Review, Refresher Course, Underwater Skills">
+    <title>PADI Scuba Review Course</title>
+    <link rel="stylesheet" href="palawan.css">
+    <script src="coron.js" defer></script>
+    <link rel ="shortcut icon" href="./images/diving.svg" width="150" height="150" type="image/png">
+    <script> function sendMessageToWhatsApp(phoneNumber, pId) {
+        var message = "Hello, I would like to order course.";
+      
+        // Get the text content from the specified <p> element
+        var additionalMessage = document.getElementById(pId).textContent;
+      
+        // Append the additional message to the main message
+        message += " " + additionalMessage;
+      
+        // Replace spaces with %20 for URL
+        message = encodeURIComponent(message);
+      
+        var url = "https://wa.me/" + phoneNumber + "?text=" + message;
+      
+        window.open(url, '_blank');
+      }
+     let currentSlide = 1;
+      let slideInterval;
+      
+      document.addEventListener("DOMContentLoaded", function () {
+      startSlideShow(); // Start the slideshow when the DOM is loaded
+      });
+      
+      function startSlideShow() {
+      slideInterval = setInterval(function () {
+          changeSlide(1); // Change to the next slide every 3 seconds
+      }, 2000);
+      }
+      
+      function stopSlideShow() {
+      clearInterval(slideInterval); // Stop the slideshow
+      }
+      
+      function changeSlide(n) {
+      showSlide(currentSlide += n);
+      }
+      
+      function showSlide(n) {
+      const slides = document.getElementsByClassName("carousel-image");
+      
+      if (n > slides.length) {
+          currentSlide = 1;
+      }
+      
+      if (n < 1) {
+          currentSlide = slides.length;
+      }
+      
+      const transformValue = -100 * (currentSlide - 1) + "%";
+      document.getElementById("image-container").style.transform = "translateX(" + transformValue + ")";
+      }
+      </script>
+</head>
+<body>
+    <header class="header2">
+        <h1>PADI Repair Diver Course</h1>
+        <nav class="nav"><a class="nava" href="index.html">Home</a>
+        <aside>
+            <button class="asidea" id="button1" onclick="sendMessageToWhatsApp('+639457057103', 'order1')">Order trip
+                <p class="order"  id="order1">Order trips</p></button>
+                <a class="asidea" href="#contacts">Contact us</a>
+        </aside>
+    </header>
+
+    <main class="padicourse">
+        <section class="scubaflex keep">
+            <p class="courseup">Look the film about our course Padi</p>
+           <a href=""> <img class="courseimg" src="images/diving1.webp" alt="Scuba diver underwater"></a>
+            <h2>Your Journey to the Underwater World Starts Here</h2>
+        </section>
+
+        <section class="scubasection">
+            <h2 class="scubadiver">About the Course</h2>
+            <p class="underscuba">The PADI Photographer Diving Course is tailored for photographers who want to enhance their diving skills to capture stunning underwater images. This course provides hands-on experience and techniques to improve your underwater photography.</p>
+        </section>
+
+        <section class="scubasection">
+            <div class="pich">
+                <div style="margin:auto;">
+                    <h2 class="scubadiver">What You Will Learn</h2>
+                    <ul class="dich">
+                        <li>Essential underwater photography techniques</li>
+                        <li>Use of specialized underwater photography gear</li>
+                        <li>Composition and lighting in underwater environments</li>
+                        <li>Post-processing tips for underwater images</li>
+                    </ul>
+                </div>
+                <div class="kich"><img class="courssection" src="images/palawan diving.webp" alt="Scuba diving equipment"></div>
+            </div>
+        </section>
+
+        <section class="scubasection">
+            <h2 class="scubadiver">Course Structure</h2>
+            <div class="pich">
+                <div class="kruch">
+                    <p>The PADI Photographer Diving Course includes:</p>
+                    <ol>
+                        <li>Theory sessions on underwater photography</li>
+                        <li>Practical sessions in controlled underwater environments</li>
+                        <li>Optional sessions for advanced underwater photography techniques</li>
+                    </ol>
+                </div>
+                <div class="kich"><img class="courssection" src="images/course advance.webp" alt="Scuba training session"></div>
+            </div>
+        </section>
+
+        <section class="scubasection">
+            <h2 class="scubadiver">Course Pricing</h2>
+            <p>The course fee is <strong>$250</strong>, which includes:</p>
+            <ul style="display:grid; text-align:center; text-decoration: underline;">
+                <li>Instructor-led training in underwater photography</li>
+                <li>Rental of specialized underwater photography equipment</li>
+                <li>PADI Photographer Diving Course certificate</li>
+            </ul>
+        </section>
+
+        <section class="scubasection">
+            <h2 class="scubadiver">Enroll Today</h2>
+            <p class="wreckp">Ready to capture amazing underwater moments? Contact us today to enroll in the PADI Photographer Diving Course!</p>
+        </section>
+
+        <section><img class="animation" src="./images/diver-woman.png"></section>
+    </main>
+
+    <div style="margin-top:30px; text-align:center;" id="carousel-container">
+        <div id="image-container">
+            <img style="filter:contrast(1.5) brightness(1.1);" class="carousel-image" id="photo1" src="./images/corals7.png" alt="Image 1">
+            <img style="filter:contrast(1.5) brightness(1);" class="carousel-image" id="photo2" src="./images/divers6.png" alt="Image 2">
+            <img class="carousel-image" id="photo3" src="./images/divers18.webp" alt="Image 3">
+            <img class="carousel-image" id="photo4" src="./images/course open water.webp" alt="Image 4">
+            <img class="carousel-image" id="photo5" src="./images/palawan diving.webp" alt="Image 5">
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container bob">
+            <div id="contacts" class="footer">
+                <p class="foottop">Contact us</p>
+
+                <address>
+                    <p class="wreckp">E-mail:</p> <a class="a" href="mailto:palawan.coron.diving@gmail.com">palawan.coron.diving@gmail.com</a>
+                    <img src="./images/phone.jpg"><a class="a" href="tel:+79622923791">Phone: 09457057103</a>
+                    <a href="https://maps.app.goo.gl/ZdFMfkHr2QtjcULT9">
+                        <img src="./images/shopmap.png" alt="Open Google Maps">
+                        Google Maps
+                    </a>
+                    <a class="a" aria-label="WhatsApp" href="https://wa.me/639457057103">
+                        <img alt="Chat on WhatsApp" src="./images/watson.jpg"/> WhatsApp
+                    </a>
+                </address>
+                <p class="as">&copy; 2025 Diving in Coron</p>
+            </div>
+
+            <div class="img-cont">
+                <img src="./images/diving2.svg" width="100" height="100" alt="Optik Logo">
+            </div>
+        </div>
+    </footer>
+
+    <script src="coron.js"></script>
+</body>
+
+
+</html>

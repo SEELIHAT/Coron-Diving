@@ -8,7 +8,23 @@
     <link rel="stylesheet" href="palawan.css">
     <script src="coron.js" defer></script>
     <link rel ="shortcut icon" href="./images/diving.svg" width="150" height="150" type="image/png">
-    <script> let currentSlide = 1;
+    <script> function sendMessageToWhatsApp(phoneNumber, pId) {
+        var message = "Hello, I would like to order course.";
+      
+        // Get the text content from the specified <p> element
+        var additionalMessage = document.getElementById(pId).textContent;
+      
+        // Append the additional message to the main message
+        message += " " + additionalMessage;
+      
+        // Replace spaces with %20 for URL
+        message = encodeURIComponent(message);
+      
+        var url = "https://wa.me/" + phoneNumber + "?text=" + message;
+      
+        window.open(url, '_blank');
+      }
+     let currentSlide = 1;
       let slideInterval;
       
       document.addEventListener("DOMContentLoaded", function () {
@@ -48,9 +64,11 @@
 <body>
     <header style="height:10%;" class="header2">
         <h1>PADI Scuba Review Course</h1>
-        <nav class="nav"><a class="nava" href="">Home</a></nav>
+        <a class="nava" href="index.html">Home</a>
         <aside>
-            <a class="asidea" href="">Order trip</a><a class="asidea" href="">Contact us</a>
+            <button class="asidea" id="button1" onclick="sendMessageToWhatsApp('+639457057103', 'order1')">Order trip
+                <p class="order"  id="order1">Order course</p></button>
+            <a class="asidea" href="#contacts">Contact us</a>
         </aside>
     </header>
 
@@ -111,7 +129,7 @@
                 <img class="carousel-image" id="photo3" src=".\images\divers18.webp" alt="Image 3">
                 <img class="carousel-image" id="photo4" src="./images/course open water.webp" alt="Image 4">
                 <img class="carousel-image" id="photo5" src="./images/palawan diving.webp" alt="Image 5">
-                <img class="carousel-image" id="photo6" src=".\images\corals11.png" alt="Image 6">
+                
             </div>
         </div>
     
@@ -122,12 +140,12 @@
             <p class="foottop">Contact us</p>
             
             <address>
-                <p class="wreckp">E-mail:</p> <a class="a" href="mailto:etumanov77@gmail">etumanov77@gmail.com</a>
-                <img src=".\images\phone.jpg"><a class="a" href="tel:+79622923791">Phone: +79622923791</a>
-                <a  href="https://maps.app.goo.gl/HhNe84gCzap5n8RT8">
+                <p class="wreckp">E-mail:</p> <a class="a" href="mailto:etumanov77@gmail">palawan.coron.diving@gmail.com</a>
+                <img src=".\images\phone.jpg"><a class="a" href="tel:+79622923791">Phone: 09457057103</a>
+                <a  href="https://maps.app.goo.gl/ZdFMfkHr2QtjcULT9">
                   <img src="images\shopmap.png" alt="Открыть Google">
                 Goole map</a>
-                <a class="a" aria-label="WhatsApp" href="https://wa.me/79622923791">
+                <a class="a" aria-label="WhatsApp" href="https://wa.me/639457057103">
                     <img alt="Chat on WhatsApp" src="images\watson.jpg"/> WhatsApp
                 </a>
      
@@ -139,16 +157,7 @@
               <img src=".\images\diving2.svg"width="100" height="100" alt="Optik Logo">
           </div>
       
-          <div class="bod">
-            <a class="dno" href="Jekky-shop.html">Coron Palawan</a>
-            
-            <a class="dno" href="catalog-sunglasses-jekky.html">Choose couse</a>
-            <a class="dno" href="Contact-lens-soflens.html">Choose the diving sait</a>
-            <a class="dno" href="color-lens-hera.html">All about us</a>
-            <a class="dno" href="#hop">Come to the top</a>
-            
-            
-        </div>
+         
       </div>
       
      

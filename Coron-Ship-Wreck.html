@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Refresh your scuba diving skills with the PADI Scuba Review course. Get back underwater with confidence!"><meta name="keywords" content="PADI, Scuba Review, Refresher Course, Underwater Skills">
+    <title>PADI Scuba Review Course</title>
+    <link rel="stylesheet" href="palawan.css">
+    <script src="coron.js" defer></script>
+    <link rel ="shortcut icon" href="./images/diving.svg" width="150" height="150" type="image/png">
+    <script> function sendMessageToWhatsApp(phoneNumber, pId) {
+        var message = "Hello, I would like to order course.";
+      
+        // Get the text content from the specified <p> element
+        var additionalMessage = document.getElementById(pId).textContent;
+      
+        // Append the additional message to the main message
+        message += " " + additionalMessage;
+      
+        // Replace spaces with %20 for URL
+        message = encodeURIComponent(message);
+      
+        var url = "https://wa.me/" + phoneNumber + "?text=" + message;
+      
+        window.open(url, '_blank');
+      }
+     let currentSlide = 1;
+      let slideInterval;
+      
+      document.addEventListener("DOMContentLoaded", function () {
+      startSlideShow(); // Start the slideshow when the DOM is loaded
+      });
+      
+      function startSlideShow() {
+      slideInterval = setInterval(function () {
+          changeSlide(1); // Change to the next slide every 3 seconds
+      }, 2000);
+      }
+      
+      function stopSlideShow() {
+      clearInterval(slideInterval); // Stop the slideshow
+      }
+      
+      function changeSlide(n) {
+      showSlide(currentSlide += n);
+      }
+      
+      function showSlide(n) {
+      const slides = document.getElementsByClassName("carousel-image");
+      
+      if (n > slides.length) {
+          currentSlide = 1;
+      }
+      
+      if (n < 1) {
+          currentSlide = slides.length;
+      }
+      
+      const transformValue = -100 * (currentSlide - 1) + "%";
+      document.getElementById("image-container").style.transform = "translateX(" + transformValue + ")";
+      }
+      </script>
+</head>
+<body>
+    <header style="height:10%;" class="header2">
+        <h1>PADI Scuba Review Course</h1>
+        <a class="nava" href="index.html">Home</a>
+        <aside>
+            <button class="asidea" id="button1" onclick="sendMessageToWhatsApp('+639457057103', 'order1')">Order trip
+                <p class="order"  id="order1">Order trip</p></button>
+            <a class="asidea" href="#contacts">Contact us</a>
+        </aside>
+    </header>
+
+    <main class="padicourse">
+      <section class="scubaflex keep">
+        <p class="courseup">Look the film about our course Padi</p>
+       <a href=""> <img class="courseimg" src="images/diving1.webp" alt="Scuba diver underwater"></a>
+        <h2>Your Journey to the Underwater World Starts Here</h2>
+    </section>
+
+
+        <section class="scubasection">
+            <h2 class="scubadiver">General information about  Ship wreck diving with us</h2>
+            <div><p class="underscuba">Wreck Diving in Coron, Palawan – Explore Sunken History Beneath the Waves
+              Coron, Palawan, is one of the world’s best destinations for wreck diving, offering an unforgettable underwater adventure. Beneath its crystal-clear waters lies a hidden treasure—several well-preserved World War II shipwrecks, making it a paradise for divers of all levels.
+              
+              Our Location & Booking Details
+              We are located in Coron, Palawan, and you can find the exact location of our dive club in the contacts section. To ensure everything is prepared for your dive, we kindly ask you to book in advance. You can call or send us a message to make a reservation.
+            </p></div>
+              
+              <div><p class="underscuba">Our Daily Dive Trip Schedule
+              <ul>
+              <li>Departure Time: 9:00 AM</li>
+            <li> First Two Dives: Wreck diving at some of Coron’s famous shipwrecks</li>
+          <li>Travel Time Between Wrecks: 40 minutes to 1 hour by boat</li>
+        <li>Lunch Break: After the second dive, we enjoy a freshly prepared lunch on the boat</li>
+      <li> Third Dive: A beautiful coral reef dive to end the trip</li></ul></p></div>
+       <h3 class="mini">What’s Included in the Price?</h3>
+       <div><p class="underscuba"> Price: 5,000 PHP (if you don’t have your own equipment)
+              Includes: Full diving equipment, boat transportation, dive guide, lunch, and drinks
+              We can meet you at the harbor and even help arrange a hotel for your stay if needed.</p></div>
+              <h3>A Glimpse into History</h3>
+              <div><p class="underscuba"> 
+              During World War II, a fleet of Japanese supply ships was bombed and sunk by American forces in 1944. These wrecks now rest at various depths, creating an extraordinary diving experience. Over the years, they have transformed into artificial reefs, teeming with marine life and covered in stunning corals.
+              
+              Who Can Dive These Wrecks?
+              Beginners can explore shallower wrecks like the Teru Kaze Maru and East Tangat Gunboat.
+              Advanced divers can venture into deeper wrecks like the Okikawa Maru or the Akitsushima, a sunken seaplane tender with massive anti-aircraft guns still visible.
+              Technical divers can go even further, exploring deep penetration areas and less-visited wrecks.
+              Why Dive with Us?
+              Our experienced PADI-certified instructors will guide you safely through these underwater historical sites, ensuring you get the best experience. Whether you’re looking for your first wreck dive or an advanced technical challenge, we offer the perfect diving adventure in Coron.
+              
+              Book your dive today and explore the sunken history of Coron, Palawan!</p></div>
+        </section><section class="scubasection"><div class="mas"> <h2>Dive Sites in Coron, Palawan</h2>
+            <p class="underscuba"> Coron is a paradise for divers, offering a mix of world-class wreck dives, coral gardens, and vibrant marine life. Below is a list of the most popular dive sites in Coron, each with unique features and experiences:
+            <ul>
+            <li>1. Irako Maru (Wreck)</li>
+            Type: WWII Japanese Refrigeration Ship
+            Depth: 28–40 meters
+            Skill Level: Advanced
+            Highlights: This upright wreck features excellent penetration opportunities and is rich in marine life, including groupers and trevallies. Visibility is typically good, showcasing its structure and coral growth.
+            <li>2. Akitsushima (Wreck)</li>
+            Type: WWII Japanese Seaplane Tender
+            Depth: 22–35 meters
+            Skill Level: Advanced
+            Highlights: Famous for its giant crane and massive propellers. Schools of batfish, barracudas, and colorful corals make this wreck a diver’s dream.
+            <li>3. Olympia Maru (Wreck)</li>
+            Type: WWII Japanese Freighter
+            Depth: 18–30 meters
+            Skill Level: Beginner to Intermediate
+            Highlights: A shallower wreck teeming with marine life, including snappers, lionfish, and anemones. The wreck is easy to navigate and a great introduction to wreck diving.
+            <li>4. Kogyo Maru (Wreck)</li>
+            Type: WWII Japanese Freighter
+            Depth: 22–34 meters
+            Skill Level: Intermediate to Advanced
+            Highlights: Divers can explore the ship’s holds, which still contain construction materials like cement bags and bulldozer parts.
+            <li>5. Morazan Maru (Wreck)</li>
+            Type: WWII Japanese Freighter
+            Depth: 12–25 meters
+            Skill Level: Beginner to Intermediate
+            Highlights: This wreck is upright and easy to penetrate, making it a favorite for those new to wreck diving. Its abundant marine life includes nudibranchs and large schools of fish.
+            <li>6. Kyokuzan Maru (Wreck)</li>
+            Type: WWII Japanese Freighter
+            Depth: 22–35 meters
+            Skill Level: Advanced
+            Highlights: Located farther from Coron town, this wreck is well-preserved, with trucks and motorcycles still visible in its cargo hold.
+            <li> 7. Lusong Gunboat (Wreck)</li>
+            Type: Shallow WWII Patrol Boat
+            Depth: 3–15 meters
+            Skill Level: Beginner
+            Highlights: Perfect for snorkeling and shallow dives, the gunboat is a haven for coral growth and small fish.
+            <li> 8. Barracuda Lake</li>
+            Type: Fresh and Saltwater Lake
+            Depth: 5–30 meters
+            Skill Level: Beginner to Advanced
+            Highlights: A unique dive with thermoclines and a mix of fresh and salt water. The lake is surrounded by limestone cliffs and is famous for its eerie, surreal atmosphere.
+            <li> 9. Twin Peaks Reef</li>
+            Type: Coral Reef
+            Depth: 5–22 meters
+            Skill Level: Beginner to Intermediate
+            Highlights: Vibrant coral formations and abundant marine life, including clownfish, angelfish, and moray eels.
+            <li>10. Skeleton Wreck</li>
+            Type: WWII Japanese Shipwreck
+            Depth: 5–22 meters
+            Skill Level: Beginner to Intermediate
+            Highlights: A shallow wreck with fantastic coral growth. Ideal for snorkeling and introductory dives.
+            <li>11. East Tangat Wreck</li>
+            Type: WWII Auxiliary Submarine Hunter
+            Depth: 5–22 meters
+            Skill Level: Beginner to Intermediate
+            Highlights: A small, shallow wreck with colorful coral and an abundance of fish. Great for novice divers.
+            <li>12. Coral Garden</li>
+            Type: Coral Reef
+            Depth: 5–20 meters
+            Skill Level: Beginner
+            Highlights: A stunning reef teeming with healthy corals and marine life, including turtles and reef sharks.
+            <li>13. Calumbuyan Island Reef</li>
+            Type: Coral Reef
+            Depth: 3–20 meters
+            Skill Level: Beginner
+            Highlights: Crystal-clear waters and vibrant marine biodiversity make this reef a great spot for both diving and snorkeling.
+            <li>14. Black Island Wreck</li>
+            Type: WWII Japanese Freighter
+            Depth: 10–32 meters
+            Skill Level: Advanced
+            Highlights: A remote wreck dive with fewer crowds. The site features excellent coral coverage and diverse marine life.
+            Why Dive in Coron?
+            Coron offers a unique mix of history, adventure, and natural beauty. Whether you're interested in exploring sunken WWII ships or enjoying
+             the colorful underwater life of its coral reefs, there’s a dive site for every level and preference.</ul> </p></div></section>
+
+        <section><img  class="animation" src=".\images\diver-woman.png"></section></main>
+
+        <div style="margin-top:30px; text-align:center;" id="carousel-container">
+            <div id="image-container">
+                <img style="filter:contrast(1.5) brightness(1.1);"class="carousel-image" id="photo1" src=".\images\corals7.png" alt="Image 1">
+                <img style="filter:contrast(1.5) brightness(1);" class="carousel-image" id="photo2" src=".\images\divers6.png" alt="Image 2">
+                <img class="carousel-image" id="photo3" src=".\images\divers18.webp" alt="Image 3">
+                <img class="carousel-image" id="photo4" src="./images/course open water.webp" alt="Image 4">
+                <img class="carousel-image" id="photo5" src="./images/palawan diving.webp" alt="Image 5">
+                
+            </div>
+        </div>
+    
+
+    <footer class="main-footer">
+        <div class="container bob">
+          <div id="contacts" class="footer">
+            <p class="foottop">Contact us</p>
+            
+            <address>
+                <p class="wreckp">E-mail:</p> <a class="a" href="mailto:etumanov77@gmail">palawan.coron.diving@gmail.com</a>
+                <img src=".\images\phone.jpg"><a class="a" href="tel:+79622923791">Phone: 09457057103</a>
+                <a  href="https://maps.app.goo.gl/ZdFMfkHr2QtjcULT9">
+                  <img src="images\shopmap.png" alt="Открыть Google">
+                Goole map</a>
+                <a class="a" aria-label="WhatsApp" href="https://wa.me/639457057103">
+                    <img alt="Chat on WhatsApp" src="images\watson.jpg"/> WhatsApp
+                </a>
+     
+              </address>
+              <p class="as">&copy; 2025 Diving in Coron</p>
+          </div>
+      
+          <div class="img-cont">
+              <img src=".\images\diving2.svg"width="100" height="100" alt="Optik Logo">
+          </div>
+      
+         
+      </div>
+      
+     
+     </footer>
+     <script src="coron.js"></script>
+</body>
+</html>

@@ -9,7 +9,23 @@
     <link rel="stylesheet" href="palawan.css">
     <script src="coron.js" defer></script>
     <link rel="shortcut icon" href="./images/diving.svg" type="image/png">
-    <script>
+    <script> function sendMessageToWhatsApp(phoneNumber, pId) {
+        var message = "Hello, I would like to order course.";
+      
+        // Get the text content from the specified <p> element
+        var additionalMessage = document.getElementById(pId).textContent;
+      
+        // Append the additional message to the main message
+        message += " " + additionalMessage;
+      
+        // Replace spaces with %20 for URL
+        message = encodeURIComponent(message);
+      
+        var url = "https://wa.me/" + phoneNumber + "?text=" + message;
+      
+        window.open(url, '_blank');
+      }
+
         let currentSlide = 1;
         let slideInterval;
 
@@ -50,9 +66,10 @@
 <body>
 <header style="height:10%;" class="header2">
     <h1>PADI Open Water Diver Course</h1>
-    <nav class="nav"><a class="nava" href="">Home</a></nav>
+    <a class="nava" href="index.html">Home</a>
     <aside>
-        <a class="asidea" href="">Order trip</a><a class="asidea" href="">Contact us</a></aside>
+        <button class="asidea" id="button1" onclick="sendMessageToWhatsApp('+639457057103', 'order1')">Order trip
+            <p class="order"  id="order1">Order course</p></button><a class="asidea" href="#contacts">Contact us</a></aside>
 </header>
 
 
@@ -130,35 +147,32 @@
 
 <footer class="main-footer">
     <div class="container bob">
-        <div id="contacts" class="footer">
-            <p class="foottop">Contact us</p>
-            <address>
-                <p class="wreckp">E-mail:</p> <a class="a" href="mailto:etumanov77@gmail.com">etumanov77@gmail.com</a>
-                <img src="./images/phone.jpg"><a class="a" href="tel:+79622923791">Phone: +79622923791</a>
-                <a href="https://maps.app.goo.gl/HhNe84gCzap5n8RT8">
-                    <img src="images/shopmap.png" alt="Open Google Maps">
-                    Google Maps</a>
-                <a class="a" aria-label="WhatsApp" href="https://wa.me/79622923791">
-                    <img alt="Chat on WhatsApp" src="./images/watson.jpg"/> WhatsApp
-                </a>
-            </address>
-            <p class="as">&copy; 2025 Diving in Coron</p>
-        </div>
-
-        <div class="img-cont">
-            <img src="./images/diving.svg" width="100" height="100" alt="Optik Logo">
-        </div>
-
-        <div class="bod">
-            <a class="dno" href="Jekky-shop.html">Coron Palawan</a>
-            <a class="dno" href="catalog-sunglasses-jekky.html">Choose a Course</a>
-            <a class="dno" href="Contact-lens-soflens.html">Choose a Diving Site</a>
-            <a class="dno" href="color-lens-hera.html">About Us</a>
-            <a class="dno" href="#top">Back to Top</a>
-        </div>
-    </div>
-</footer>
-
-<script src="coron.js"></script>
+      <div id="contacts" class="footer">
+        <p class="foottop">Contact us</p>
+        
+        <address>
+            <p class="wreckp">E-mail:</p> <a class="a" href="mailto:etumanov77@gmail">palawan.coron.diving@gmail.com</a>
+            <img src=".\images\phone.jpg"><a class="a" href="tel:+79622923791">Phone: 09457057103</a>
+            <a  href="https://maps.app.goo.gl/ZdFMfkHr2QtjcULT9">
+              <img src="images\shopmap.png" alt="Открыть Google">
+            Goole map</a>
+            <a class="a" aria-label="WhatsApp" href="https://wa.me/639457057103">
+                <img alt="Chat on WhatsApp" src="images\watson.jpg"/> WhatsApp
+            </a>
+ 
+          </address>
+          <p class="as">&copy; 2025 Diving in Coron</p>
+      </div>
+  
+      <div class="img-cont">
+          <img src=".\images\diving2.svg"width="100" height="100" alt="Optik Logo">
+      </div>
+  
+     
+  </div>
+  
+ 
+ </footer>
+ <script src="coron.js"></script>
 </body>
 </html>
