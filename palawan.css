@@ -72,10 +72,10 @@ h2{color:white;font-weight: bold; font-style: italic;font-family: 'Franklin Goth
       -3px -3px 5px black;float:left;text-align:center;}
 
    .menu{display:flex; justify-content:space-between;}
-   .wreckmenu{float:left;text-align:center;display:grid;justify-content:start;}
-   .wreckmenu a{border:3px solid white;border-radius: 20px; width:80%;font-size: 15px;background-color: rgb(4, 4, 88);color:white;height:30px;margin:10px;align-content:center;}
-   .stadymenu{float:right;text-align:center;display:grid;justify-content:end;}
-   .stadymenu a{border:3px solid white;border-radius: 20px; width:80%;font-size: 15px;background-color: rgb(4, 4, 88);color:white;height:30px;margin:10px;align-content:center;}
+   .wreckmenu{float:left;text-align:center;display:grid;justify-content:start;max-width:100px;}
+   .wreckmenu a{border:3px solid white;border-radius: 20px;font-size: 14px;background-color: rgb(4, 4, 88);color:white;height:30px;margin:10px;align-content:center;}
+   .stadymenu{float:right;text-align:center;display:grid;justify-content:end;max-width:100px;}
+   .stadymenu a{border:3px solid white;border-radius: 20px;font-size: 14px;background-color: rgb(4, 4, 88);color:white;height:30px;margin:10px;align-content:center;}
 .main-footer{margin-top: 20px;;}
 .choosep{text-align: center;width:70%;color:red;font-size:30px;
    font-family: 'Franklin Gothic Medium', sans-serif; font-style: italic;font-weight: bold;align-items:center;margin:auto;
