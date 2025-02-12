@@ -9,58 +9,7 @@
     <link rel="stylesheet" href="palawan.css">
     <script src="coron.js" defer></script>
     <link rel="shortcut icon" href="./images/diving.svg" width="150" height="150" type="image/png">
-    <script>  function sendMessageToWhatsApp(phoneNumber, pId) {
-        var message = "Hello, I would like to order course.";
-      
-        // Get the text content from the specified <p> element
-        var additionalMessage = document.getElementById(pId).textContent;
-      
-        // Append the additional message to the main message
-        message += " " + additionalMessage;
-      
-        // Replace spaces with %20 for URL
-        message = encodeURIComponent(message);
-      
-        var url = "https://wa.me/" + phoneNumber + "?text=" + message;
-      
-        window.open(url, '_blank');
-      }
-    let currentSlide = 1;
-        let slideInterval;
-        
-        document.addEventListener("DOMContentLoaded", function () {
-        startSlideShow(); // Start the slideshow when the DOM is loaded
-        });
-        
-        function startSlideShow() {
-        slideInterval = setInterval(function () {
-            changeSlide(1); // Change to the next slide every 3 seconds
-        }, 2000);
-        }
-        
-        function stopSlideShow() {
-        clearInterval(slideInterval); // Stop the slideshow
-        }
-        
-        function changeSlide(n) {
-        showSlide(currentSlide += n);
-        }
-        
-        function showSlide(n) {
-        const slides = document.getElementsByClassName("carousel-image");
-        
-        if (n > slides.length) {
-            currentSlide = 1;
-        }
-        
-        if (n < 1) {
-            currentSlide = slides.length;
-        }
-        
-        const transformValue = -100 * (currentSlide - 1) + "%";
-        document.getElementById("image-container").style.transform = "translateX(" + transformValue + ")";
-        }
-        </script>
+    
 </head>
 <body>
     <header class="header2">
@@ -75,13 +24,41 @@
     <main class="padicourse">
       <section class="scubaflex keep">
         <p class="courseup">Look the film about our course Padi</p>
-       <a href=""> <img class="courseimg" src="images/diving1.webp" alt="Scuba diver underwater"></a>
+       <a href=""> <img class="courseimg" src="images\finger33.png" alt="Scuba diver underwater"></a>
         <h2>Your Journey to the Underwater World Starts Here</h2>
     </section>
 
         <section class="scubasection">
             <h2 class="scubadiver">About the Course</h2>
-            <p class="underscuba">The PADI Master Scuba Diver certification is the highest level in recreational diving. This program enhances your skills, making you a highly experienced diver. It requires completing specialty courses, logged dives, and a Rescue Diver certification.</p>
+            <p class="underscuba">The PADI Master Scuba Diver certification is the highest
+                 level in recreational diving. This program enhances your skills, making you a highly experienced diver. 
+                 It requires completing specialty courses, logged dives, and a Rescue Diver certification.</p>
+                 <div style="color:black;background:none ;font-size:15px;padding:10px;
+                  font-style:italic; font-family: 'Segoe UI', sans-serif;" class="nero">
+                  <p class="underscuba"> The **PADI Master Scuba Diver** certification is the highest recreational diving level in the PADI system. It represents the pinnacle of scuba diving achievement and recognizes you as a highly experienced and skilled diver. Earning this prestigious certification opens doors to advanced diving adventures and demonstrates your dedication to underwater exploration.  
+      
+
+                   
+               </p>
+            </div>
+            <div class="textMore"id="myDiv"> <p class="underscuba">#### **What is a Master Scuba Diver?**  
+                        A **PADI Master Scuba Diver** is a diver with a wealth of experience and training, possessing expertise in a variety of diving specialties. It’s not just a certification—it’s a recognition of your commitment to becoming the best recreational diver you can be.  
+                        
+                        ---
+                        
+                        #### **What You’ll Accomplish**  
+                        To become a Master Scuba Diver, you’ll need to:  
+                        1. **Earn Five PADI Specialty Diver Certifications**  
+                           - Choose from a wide range of specialties, such as Deep Diving, Wreck Diving, Night Diving, Underwater Photography, and more.  
+                        2. **Complete the PADI Rescue Diver Course**  
+                           - Develop advanced safety and emergency response skills to assist others and manage diving situations.  
+                        3. **Log at Least 50 Dives**  
+                           - Gain extensive experience through open water dives in various environments and conditions.  
+                  
+                       </p></div>
+                      <button id="button" class="button" onclick="changeDisplay()">Press for read all</button>
+            
+                   
         </section>
 
         <section class="scubasection">
@@ -89,7 +66,7 @@
                 <div>
                     <h2 class="scubadiver">What You Will Learn</h2>
                     <ul class="dich">
-                        <li>Advanced diving techniques and safety procedures</li>
+                        <li>Master diving techniques and safety procedures</li>
                         <li>Specialty dive training (e.g., deep diving, night diving, wreck diving)</li>
                         <li>Emergency response skills</li>
                         <li>Navigation and buoyancy control</li>

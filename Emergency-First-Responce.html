@@ -7,60 +7,9 @@
     <meta name="keywords" content="PADI, Emergency First Response, First Aid, CPR, Rescue Training">
     <title>PADI Emergency First Response Course</title>
     <link rel="stylesheet" href="palawan.css">
-    <script src="coron.js" defer></script>
+    
     <link rel="shortcut icon" href="./images/diving2.svg" width="150" height="150" type="image/png">
-    <script> function sendMessageToWhatsApp(phoneNumber, pId) {
-        var message = "Hello, I would like to order course.";
-      
-        // Get the text content from the specified <p> element
-        var additionalMessage = document.getElementById(pId).textContent;
-      
-        // Append the additional message to the main message
-        message += " " + additionalMessage;
-      
-        // Replace spaces with %20 for URL
-        message = encodeURIComponent(message);
-      
-        var url = "https://wa.me/" + phoneNumber + "?text=" + message;
-      
-        window.open(url, '_blank');
-      }
-     let currentSlide = 1;
-      let slideInterval;
-      
-      document.addEventListener("DOMContentLoaded", function () {
-      startSlideShow(); // Start the slideshow when the DOM is loaded
-      });
-      
-      function startSlideShow() {
-      slideInterval = setInterval(function () {
-          changeSlide(1); // Change to the next slide every 3 seconds
-      }, 2000);
-      }
-      
-      function stopSlideShow() {
-      clearInterval(slideInterval); // Stop the slideshow
-      }
-      
-      function changeSlide(n) {
-      showSlide(currentSlide += n);
-      }
-      
-      function showSlide(n) {
-      const slides = document.getElementsByClassName("carousel-image");
-      
-      if (n > slides.length) {
-          currentSlide = 1;
-      }
-      
-      if (n < 1) {
-          currentSlide = slides.length;
-      }
-      
-      const transformValue = -100 * (currentSlide - 1) + "%";
-      document.getElementById("image-container").style.transform = "translateX(" + transformValue + ")";
-      }
-      </script>
+    
 </head>
 <body>
     <header style="height:10%;" class="header2">
@@ -75,7 +24,7 @@
     <main class="padicourse">
       <section class="scubaflex keep">
         <p class="courseup">Look the film about our course Padi</p>
-       <a href=""> <img class="courseimg" src="images/diving1.webp" alt="Scuba diver underwater"></a>
+       <a href=""> <img class="courseimg" src="images\finger33.png" alt="Scuba diver underwater"></a>
         <h2>Your Journey to the Underwater World Starts Here</h2>
     </section> 
 
@@ -168,7 +117,6 @@
           
          
          </footer>
-         <script src="coron.js"></script>
-     <script src="coron.js"></script>
+                
 </body>
 </html>

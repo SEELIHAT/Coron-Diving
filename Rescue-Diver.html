@@ -9,58 +9,7 @@
     <link rel="stylesheet" href="palawan.css">
     <script src="coron.js" defer></script>
     <link rel="shortcut icon" href="./images/diving.svg" width="150" height="150" type="image/png">
-    <script>  function sendMessageToWhatsApp(phoneNumber, pId) {
-        var message = "Hello, I would like to order course.";
-      
-        // Get the text content from the specified <p> element
-        var additionalMessage = document.getElementById(pId).textContent;
-      
-        // Append the additional message to the main message
-        message += " " + additionalMessage;
-      
-        // Replace spaces with %20 for URL
-        message = encodeURIComponent(message);
-      
-        var url = "https://wa.me/" + phoneNumber + "?text=" + message;
-      
-        window.open(url, '_blank');
-      }
-    let currentSlide = 1;
-      let slideInterval;
-      
-      document.addEventListener("DOMContentLoaded", function () {
-      startSlideShow(); // Start the slideshow when the DOM is loaded
-      });
-      
-      function startSlideShow() {
-      slideInterval = setInterval(function () {
-          changeSlide(1); // Change to the next slide every 3 seconds
-      }, 2000);
-      }
-      
-      function stopSlideShow() {
-      clearInterval(slideInterval); // Stop the slideshow
-      }
-      
-      function changeSlide(n) {
-      showSlide(currentSlide += n);
-      }
-      
-      function showSlide(n) {
-      const slides = document.getElementsByClassName("carousel-image");
-      
-      if (n > slides.length) {
-          currentSlide = 1;
-      }
-      
-      if (n < 1) {
-          currentSlide = slides.length;
-      }
-      
-      const transformValue = -100 * (currentSlide - 1) + "%";
-      document.getElementById("image-container").style.transform = "translateX(" + transformValue + ")";
-      }
-      </script>
+    
 </head>
 <body>
     <header style="height:10%;" class="header2">
@@ -75,13 +24,47 @@
     <main class="padicourse">
       <section class="scubaflex keep">
          <p class="courseup">Look the film about our course Padi</p>
-        <a href=""> <img class="courseimg" src="images/diving1.webp" alt="Scuba diver underwater"></a>
+        <a href=""> <img class="courseimg" src="images\finger33.png" alt="Scuba diver underwater"></a>
          <h2>Your Journey to the Underwater World Starts Here</h2>
      </section>
 
         <section class="scubasection">
             <h2 class="scubadiver">About the Course</h2>
-            <p class="underscuba">The PADI Rescue Diver Course is designed to improve your awareness and skills in handling emergency situations. This course is essential for divers looking to enhance their confidence and ability to assist others in need.</p>
+            <p class="underscuba">The PADI Rescue Diver Course is designed to improve your awareness and skills
+                 in handling emergency situations. This course is essential for divers looking to enhance their confidence and
+                  ability to assist others in need.</p>
+                  <div class="nero">
+                 <p class="underscuba">The **PADI Rescue Diver Course**
+                     is one of the most rewarding and transformative scuba diving courses available. 
+                     Designed to make you a more confident and capable diver, this course prepares you
+                      to prevent and manage diving emergencies, assist others, and enhance safety in the water.  
+
+                  
+              </p>
+            </div>
+            <div class="textMore"id="myDiv"> <p class="underscuba">#### **What You’ll Learn**  
+                        The Rescue Diver Course combines knowledge development, in-water training, and practical scenarios to build your skills and confidence. Key topics include:  
+                        
+                        1. **Self-Rescue**  
+                           - Refine your own diving skills to prevent potential issues and respond to emergencies effectively.  
+                        
+                        2. **Recognizing and Managing Stress in Others**  
+                           - Learn to identify stress in fellow divers and take action before it escalates into a problem.  
+                        
+                        3. **Emergency Management and Equipment**  
+                           - Develop strategies for managing diving emergencies and learn how to use essential rescue equipment.  
+                        
+                        4. **Rescue Techniques**  
+                           - Practice rescuing unresponsive divers, assisting panicked divers, and responding to underwater and surface emergencies.  
+                        
+                        5. **Realistic Scenarios**  
+                           - Apply your skills in controlled yet realistic rescue scenarios to build confidence and readiness for real-world situations.  
+                        
+                  
+                      </p></div>
+                     <button id="button" class="button" onclick="changeDisplay()">Press for read all</button>
+           
+                  
         </section>
 
         <section class="scubasection">
@@ -95,7 +78,7 @@
                         <li>Rescue exercises in various underwater scenarios</li>
                     </ul>
                 </div>
-                <div class="kich"><img class="courssection" src="images/rescue-diving.webp" alt="Rescue diving training"></div>
+                <div class="kich"><img class="courssection" style="width:220px;height:250px;" src="images\trening womans.webp" alt="Rescue diving training"></div>
             </div>
         </section>
 
@@ -110,7 +93,7 @@
                         <li>Open water rescue scenarios</li>
                     </ol>
                 </div>
-                <div class="kich"><img class="courssection" src="images/rescue-course.webp" alt="Rescue training session"></div>
+                <div class="kich"><img class="courssection" src="images\divers9.png" alt="Rescue training session"></div>
             </div>
         </section>
 
