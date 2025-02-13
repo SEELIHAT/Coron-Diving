@@ -79,6 +79,32 @@ h2{color:white;font-weight: bold; font-style: italic;font-family: 'Franklin Goth
    .stadymenu a{border:3px solid white;border-radius: 20px;font-size: 14px;
     background-color:
      rgb(4, 4, 88);color:white;height:40px;margin:10px;align-content:center;}
+     @media screen and (max-width: 450px) {
+      .wreckmenu a {
+        font-size: 14px;
+        max-width: 100px;
+      }
+    }
+    
+    @media screen and (min-width: 450px) {
+      .wreckmenu a {
+        font-size: 20px;
+        max-width: 200px;
+      }
+    }
+    @media screen and (max-width: 450px) {
+      .stadymenu a {
+        font-size: 14px;
+        max-width: 100px;
+      }
+    }
+    
+    @media screen and (min-width: 450px) {
+      .stadymenu a {
+        font-size: 20px;
+        max-width: 200px;
+      }
+    }
 .main-footer{margin-top: 20px;;}
 .choosep{text-align: center;width:70%;color:red;font-size:30px;
    font-family: 'Franklin Gothic Medium', sans-serif; font-style: italic;font-weight: bold;align-items:center;margin:auto;
