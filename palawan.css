@@ -431,4 +431,5 @@ li{list-style-type:none;}
 .pas{color:black;background:none ;font-size:15px;padding:10px;
   font-style:italic; font-family: 'Segoe UI', sans-serif;}
 .mas li{text-decoration: underline;}
+img[alt]{font-size:1px;}
 
