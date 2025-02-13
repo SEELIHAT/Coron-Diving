@@ -73,15 +73,15 @@ h2{color:white;font-weight: bold; font-style: italic;font-family: 'Franklin Goth
 
    .menu{display:flex; justify-content:space-between;}
    .wreckmenu{float:left;text-align:center;display:grid;justify-content:start;}
-   .wreckmenu a{border:3px solid white;border-radius: 20px;font-size: 14px;background-color:
+   .wreckmenu a{border:3px solid white;border-radius: 20px;font-size: 13px;background-color:
      rgb(4, 4, 88);color:white;height:40px;align-content:center;}
    .stadymenu{float:right;text-align:center;display:grid;justify-content:end;}
-   .stadymenu a{border:3px solid white;border-radius: 20px;font-size: 14px;
+   .stadymenu a{border:3px solid white;border-radius: 20px;font-size: 13px;
     background-color:
      rgb(4, 4, 88);color:white;height:40px;align-content:center;}
      @media screen and (max-width: 450px) {
       .wreckmenu a {
-        font-size: 14px;
+        font-size: 13px;
       width: 100px;
       }
     }
@@ -94,7 +94,7 @@ h2{color:white;font-weight: bold; font-style: italic;font-family: 'Franklin Goth
     }
     @media screen and (max-width: 450px) {
       .stadymenu a {
-        font-size: 14px;
+        font-size: 13px;
         width: 100px;
       }
     }
