@@ -80,27 +80,27 @@ h2{color:white;font-weight: bold; font-style: italic;font-family: 'Franklin Goth
     background-color:
      rgb(4, 4, 88);color:white;height:40px;align-content:center;}
      @media screen and (max-width: 450px) {
-      .wreckmenu a {
+      .wreckmenu a {margin-top:10px;
         font-size: 13px;
       width: 100px;
       }
     }
     
     @media screen and (min-width: 450px) {
-      .wreckmenu a {
+      .wreckmenu a {margin-top:10px;
         font-size: 20px;
         width: 200px;
       }
     }
     @media screen and (max-width: 450px) {
-      .stadymenu a {
+      .stadymenu a {margin-top:10px;
         font-size: 13px;
         width: 100px;
       }
     }
     
     @media screen and (min-width: 450px) {
-      .stadymenu a {
+      .stadymenu a {margin-top:10px;
         font-size: 20px;
         width: 200px;
       }
