@@ -65,11 +65,10 @@ function sendMessageToWhatsApp(phoneNumber, pId) {
 function changeDisplay() {
     var myDiv = document.getElementById('myDiv');
     myDiv.style.display = 'grid';
-    myDiv.style.color = 'black';
+    myDiv.style.color = 'white';
     myDiv.style.fontStyle = 'italic';
-    myDiv.style.fontWeight = '400';
     myDiv.style.padding = '10px';
-    myDiv.style.fontSize = '15px'; // Added 'px' to specify units
+    myDiv.style.fontSize = '20px'; // Added 'px' to specify units
     document.getElementById('button').style.display = 'none';
 }
 

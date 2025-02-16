@@ -367,7 +367,9 @@ img .imgmaruko{width:220px;margin:auto;height:250px;margin:auto;}
 .courseup{text-align:left;transform: rotate(45deg) translateY(47px) translateX(44px);font-size: 20px;color:white; 
   text-shadow:2px 2px 1px black,
 -2px -2px 1px black;display:flex;flex-wrap:wrap;}
-.courseimg{width:100px;height:80px;border:5px solid blue;border-radius:35px 15px 35px 15px;padding:5px;margin-left:-200px;}
+.courseimg{width:100px;height:80px;border:5px solid blue;
+  border-radius:35px 15px 35px 15px;padding:5px;margin-left:-200px;}
+
 main .padicourse{gap:10px;}
 .gallery-grid{display:flex;flex-wrap: wrap; overflow: hidden;}
 .gallery-grid img{width:220px;height:auto; margin:auto;}
@@ -413,9 +415,13 @@ li{list-style-type:none;}
 100% { bottom: 90%; right: 15%; opacity: 0; }
 }
 .warfly{z-index:50;}
-.warbomb{z-index:50;}
-.warwreck{z-index:50;}
-.warfair{z-index:50;}
+.warbomb{z-index:50;background-color: aliceblue;
+  box-shadow:1px 1px 1px 1px white,
+  -1px -1px 1px 1px white; 
+}
+.warwreck{z-index:50;
+   }
+.warfair{z-index:50;background-color: aliceblue;}
 .wreckp{color:white;}
 .underscuba{font-size: 15px; color:black;padding:10px; font-style:italic; font-family: 'Segoe UI', sans-serif;}
 .nav{height:30px;}
@@ -432,4 +438,6 @@ li{list-style-type:none;}
   font-style:italic; font-family: 'Segoe UI', sans-serif;}
 .mas li{text-decoration: underline;}
 img[alt]{font-size:1px;}
+
+
 
