@@ -359,12 +359,13 @@ img .imgmaruko{width:220px;margin:auto;height:250px;margin:auto;}
 .scubadiver{float:left;}
 .scubaflex{display:flex;flex-wrap: wrap;overflow: hidden;}
 .scubaflex img{float:left;width:220px;height:auto;}
-.scubaflex h2{margin:auto;}
+
+ h2{margin:auto;}
 .courssection{width:220px;}
 .nav{display:grid;}
 .navimg{width:10%;height:5%; }
 .nava{color:white;font-size:20px; color:white;margin-top:-50px;margin-left:10%;}
-.courseup{text-align:left;transform: rotate(45deg) translateY(47px) translateX(44px);font-size: 20px;color:white; 
+.courseup{text-align:left;transform: rotate(45deg) translateY(37px) translateX(84px);font-size: 20px;color:white; 
   text-shadow:1px 1px 1px black,
 -1px -1px 1px black;display:flex;flex-wrap:wrap;}
 .courseimg{width:100px;height:80px;border:5px solid blue;
