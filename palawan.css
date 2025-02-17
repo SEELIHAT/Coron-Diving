@@ -419,9 +419,9 @@ li{list-style-type:none;}
   box-shadow:1px 1px 1px 1px white,
   -1px -1px 1px 1px white; 
 }
-.warwreck{z-index:50;
+.warwreck{z-index:100;
    }
-.warfair{z-index:50;background-color: aliceblue;}
+.warfair{z-index:100;background-color: aliceblue;}
 .wreckp{color:white;}
 .underscuba{font-size: 15px; color:black;padding:10px; font-style:italic; font-family: 'Segoe UI', sans-serif;}
 .nav{height:30px;}
