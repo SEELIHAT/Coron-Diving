@@ -31,7 +31,7 @@
      box-shadow:inset 1px 1px 1px black,
      inset -1px -1px -1px black; }
 
-  .button{ width:20%;;text-decoration: none;
+  .button{ width:23%;;text-decoration: none;
     border: 3px solid white;
    padding:5px;
    border-top-left-radius: 25%;
@@ -41,7 +41,7 @@
    color:rgb(193, 182, 230);
      font-size:13px; font-style:italic;padding:5px;
     box-shadow:inset 1px 1px 1px white,
-    inset -1px -1px -1px white; height:37px;margin:10px;}
+    inset -1px -1px -1px white; height:auto;margin:10px;}
 
    .buttontwo{border:3px solid yellow; color:rgb(105, 17, 17); color:yellow;
     padding:5px; font-size:12px; font-style:italic;background-color:red;}
