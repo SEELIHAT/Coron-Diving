@@ -331,9 +331,15 @@ img .imgmaruko{width:220px;margin:auto;height:250px;margin:auto;}
 @keyframes warwreck {
   0% { bottom: 40%; right: 40%; opacity: 1; }
   70% { bottom: 40%; right: 45%; opacity: 1; }
-  100% { bottom: 30%; right: 45%; opacity: 0; }
+  100% { bottom: 30%; right: 40%; opacity: 0; }
 }
-.warwreck{width:35% ;height:20%;animation-name: warwreck;animation-duration: 10s;position:fixed;}
+@keyframes warwreckduo {
+  0% { bottom: 40%; right: 45%; opacity: 1; }
+  70% { bottom: 40%; right: 40%; opacity: 1; }
+  100% { bottom: 30%; right: 40%; opacity: 0; }
+}
+
+.warwreckduo{width:35% ;height:20%;animation-name: warwreckduo;animation-duration: 10s;position:fixed;}
 @keyframes warbomb {
   0% { bottom: 70%; right: 45%; opacity: 1; }
   
