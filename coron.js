@@ -46,7 +46,7 @@ function showSlide(n) {
 }
 
 function sendMessageToWhatsApp(phoneNumber, pId) {
-    var message = "Hello, I would like to order a course.";
+    var message = "Hello.";
 
     // Get the text content from the specified <p> element
     var additionalMessage = document.getElementById(pId).textContent;
