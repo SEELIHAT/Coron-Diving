@@ -373,7 +373,7 @@ img .imgmaruko{width:220px;margin:auto;height:250px;margin:auto;}
 .nava{color:white;font-size:20px; color:white;margin-top:-50px;margin-left:10%;}
 .courseup{text-align:left;transform: rotate(45deg) translateY(37px) translateX(84px);font-size: 20px;color:white; 
   text-shadow:1px 1px 1px black,
--1px -1px 1px black;display:flex;flex-wrap:wrap;}
+-1px -1px 1px black;display:flex;flex-wrap:wrap;max-width:230px;}
 .courseimg{width:100px;height:80px;border:5px solid blue;
   border-radius:35px 15px 35px 15px;padding:5px;margin-left:-200px;}
 
