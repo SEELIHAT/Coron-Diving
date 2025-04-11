@@ -469,11 +469,14 @@ img[alt]{font-size:1px;}
   position: absolute;
   overflow: hidden;
   flex-wrap: nowrap;
+  
 }
 .map-container {width:280px;
   margin: 3px 0;
   position: relative;
  height: 350px;
+ margin:auto;
+ 
 }
 .map-marker p{font-size:10px; color:red;}
 .map-marker{white-space:nowrap;}
