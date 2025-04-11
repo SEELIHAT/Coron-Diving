@@ -471,10 +471,10 @@ img[alt]{font-size:1px;}
   flex-wrap: nowrap;
   
 }
-.map-container {width:280px;
+.map-container {width:315px;
   margin: 3px 0;
   position: relative;
- height: 350px;
+ height: 450px;
  margin:auto;
  
 }
