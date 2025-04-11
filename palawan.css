@@ -470,10 +470,10 @@ img[alt]{font-size:1px;}
   overflow: hidden;
   flex-wrap: nowrap;
 }
-.map-container {
+.map-container {width:280px;
   margin: 3px 0;
   position: relative;
-  height:auto;
+ height: 350px;
 }
 .map-marker p{font-size:10px; color:red;}
 .map-marker{white-space:nowrap;}
