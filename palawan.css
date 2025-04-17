@@ -486,3 +486,11 @@ img[alt]{font-size:1px;}
 .divbeforefooter{display:flex; justify-content: space-between;gap:10px;width:100%;margin-top:15px;}
 .beforefooter{padding:10px;color:white; border-radius: 15px 15px 15px 15px;width:30%; text-align:center;}
 .mas li{background-color: rgb(69, 69, 11);border-radius:3px 5px 4px 1px; color:white;width:20%;}
+@keyframes warwreck {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+#wreck {
+  animation: warwreck 3s forwards;
+}
