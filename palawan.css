@@ -392,7 +392,7 @@ img .imgmaruko{width:220px;margin:auto;height:250px;margin:auto;}
   text-shadow:1px 1px 1px black,
 -1px -1px 1px black;display:flex;flex-wrap:wrap;max-width:150px;}
 .courseimg{width:100px;height:80px;border:5px solid blue;
-  border-radius:35px 15px 35px 15px;padding:5px;margin-left:-200px;}
+  border-radius:35px 15px 35px 15px;padding:5px;margin-left:-150px;}
   .dito{font-size:15px;}
 
 main .padicourse{gap:10px;}
