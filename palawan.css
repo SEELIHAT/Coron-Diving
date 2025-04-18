@@ -343,8 +343,8 @@ img .imgmaruko{width:220px;margin:auto;height:250px;margin:auto;}
   100% { bottom: 72%; right: 81%; opacity: 0; }
 }
 .warfly{width:10%;height:6%; animation-name: fly; animation-duration: 10s;position:fixed;}
-
-@keyframes warwreck {
+.warwrecks{width:35% ;height:20%;animation-name: warwrecks;animation-duration: 10s;position:fixed;}
+@keyframes warwrecks {
   0% { bottom: 40%; right: 40%; opacity: 1; }
   70% { bottom: 40%; right: 45%; opacity: 1; }
   100% { bottom: 30%; right: 40%; opacity: 0; }
@@ -363,14 +363,14 @@ img .imgmaruko{width:220px;margin:auto;height:250px;margin:auto;}
 }
 .warbomb{width:5% ;height:3%;animation-name: warbomb;animation-duration: 2s;position:fixed;animation-delay: 2s;}
 
-.warwreck{width:35% ;height:20%;animation-name: warwreck;animation-duration: 10s;position:fixed;}
 
-@keyframes warbomb {
+
+@keyframes warbomb2{
   0% { bottom: 70%; right: 45%; opacity: 1; }
   
   100% { bottom: 50%; right: 45%; opacity: 0; }
 }
-.warbomb{width:5% ;z-index:10;height:3%;animation-name: warbomb;animation-duration: 2s;position:fixed;animation-delay: 2s;}
+.warbomb2{width:5% ;z-index:10;height:3%;animation-name: warbomb;animation-duration: 2s;position:fixed;animation-delay: 2s;}
 @keyframes warfair {
   0% { bottom: 50%; right: 45%; opacity: 1;width:10%;}
   
@@ -444,7 +444,7 @@ li{list-style-type:none;}
   box-shadow:1px 1px 1px 1px white,
   -1px -1px 1px 1px white; 
 }
-.warwreck{z-index:100;
+.warwrecks{z-index:100;
    }
 .warfair{z-index:100;background-color: aliceblue;}
 .wreckp{color:white;}
@@ -486,14 +486,7 @@ img[alt]{font-size:1px;}
 .divbeforefooter{display:flex; justify-content: space-between;gap:10px;width:100%;margin-top:15px;}
 .beforefooter{padding:10px;color:white; border-radius: 15px 15px 15px 15px;width:30%; text-align:center;}
 .mas li{background-color: rgb(69, 69, 11);border-radius:3px 5px 4px 1px; color:white;width:20%;}
-@keyframes warwreck {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
 
-#wreck {
-  animation: warwreck 3s forwards;
-}
 .gass{text-align:center;}
 .detailmap{display:grid;justify-content: space-around;width:100%;}
 .detailmap div{display:flex; border:3px solid black; width:100%;margin-left:10px;margin-right:10px;margin-bottom:10px;margin-top: 10px;}
