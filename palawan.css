@@ -485,8 +485,8 @@ img[alt]{font-size:1px;}
 .map-marker{white-space:nowrap;}
 .tablerent{display:flex; justify-content: space-around; flex-wrap: wrap; margin:auto;}
 .twogo{border:3px solid black; background-color: black; border-radius:15px 15px 15px 15px; color:white;}
-.divbeforefooter{display:flex; flex-wrap:wrap; justify-content: space-between;gap:10px;width:100%;margin-top:15px;}
-.beforefooter{padding:10px;color:white; border-radius: 15px 15px 15px 15px;width:30%; text-align:center;}
+.divbeforefooter{display:flex; flex-wrap:wrap; justify-content: space-between;gap:5px;width:100%;margin-top:15px;}
+.beforefooter{padding:5px;color:white; border-radius: 15px 15px 15px 15px;width:30%; text-align:center;overflow:hidden;}
 .mas li{background-color: rgb(69, 69, 11);border-radius:3px 5px 4px 1px; color:white;width:50%;}
 
 .gass{text-align:center;}
