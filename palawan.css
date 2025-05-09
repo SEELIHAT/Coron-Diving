@@ -316,7 +316,7 @@ a.youtube{color:red;font-size:23px; font-style:italic; text-decoration:dashed;ba
 }
 .button2{margin-bottom: 10px;}
 img .imgmaruko{width:220px;margin:auto;height:250px;margin:auto;}
-.name{color:black; font-size:20px;text-align:center;}
+.name{color:black; font-size:20px;text-align:center;margin:auto;}
 .hello li{text-decoration: none;list-style-type: none; font-size: 20px;text-align:center;}
 .wreckdiv1{display:grid;}
 .wracksection1{display:grid;}
