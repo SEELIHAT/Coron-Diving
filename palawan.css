@@ -235,6 +235,8 @@ a.youtube{color:red;font-size:23px; font-style:italic; text-decoration:dashed;ba
 @keyframes opa4{10%{opacity:0.1;}50%{opacity:0.6;}100%{opacity:1;}}
 .sras10{animation-name:opa4;animation-duration:6s;animation-delay: 14s;}
 @keyframes jopa4{10%{opacity:0.1;}50%{opacity:0.6;}100%{opacity:1; ;}}
+.sras11{animation-name:opa4;animation-duration:6s;animation-delay: 15s;}
+@keyframes opa4{10%{opacity:0.1;}50%{opacity:0.6;}100%{opacity:1; ;}}
 .lras10{animation-name:jopa4;animation-duration:6s; animation-delay: 14s;}
 .bubbleone, .bubbletwo, .bubblefree,.bubblechetire,.bubblepiat,.bubbleshest{
   position: absolute;
