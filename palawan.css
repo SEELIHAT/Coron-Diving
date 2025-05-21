@@ -87,17 +87,17 @@ h2{color:white;font-weight: bold; font-style: italic;font-family: 'Franklin Goth
       -3px -3px 5px black;float:left;text-align:center;}
 
    .menu{display:flex; justify-content:space-between;}
-   .wreckmenu{float:left;text-align:center;display:grid;justify-content:start;}
-   .wreckmenu a{border:3px solid white;border-radius: 20px;font-size: 13px;background-color:
-     rgb(4, 4, 88);color:white;height:40px;align-content:center;}
+   .wreckmenu{display:flex;flex-wrap: wrap; width:100%;justify-content: space-between;}
+   .wreckmenu a{border:3px solid rgb(107, 96, 33);border-radius: 20px;font-size: 13px;background-color:
+     rgb(4, 4, 88);color:white;height:auto;padding:5px; text-align: center;}
    .stadymenu{float:right;text-align:center;display:grid;justify-content:end;}
    .stadymenu a{border:3px solid white;border-radius: 20px;font-size: 13px;
     background-color:
      rgb(4, 4, 88);color:white;height:40px;align-content:center;}
      @media screen and (max-width: 450px) {
       .wreckmenu a {margin-top:10px;
-        font-size: 13px;
-      width: 100px;
+       font-size:10px; 
+     
       }
     }
     
