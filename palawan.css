@@ -87,19 +87,19 @@ h2{color:white;font-weight: bold; font-style: italic;font-family: 'Franklin Goth
       -3px -3px 5px black;float:left;text-align:center;}
 
    .menu{display:flex; justify-content:space-between;}
-   .wreckmenu{display:flex;flex-wrap: wrap; width:100%;justify-content: space-between;}
-   .wreckmenu a{border:3px solid rgb(107, 96, 33);border-radius: 20px;font-size: 13px;background-color:
-     rgb(4, 4, 88);color:white;height:auto;padding:5px; text-align: center;}
+   .wreckmenus{display:flex;flex-wrap: wrap; width:100%;justify-content: space-between;}
+   .wreckmenus a{border:3px solid rgb(107, 96, 33);border-radius: 20px;font-size: 13px;background-color:
+     rgb(4, 4, 88);color:white;height:auto;padding:5px; text-align: center;margin-top:10px;}
    .stadymenu{float:right;text-align:center;display:grid;justify-content:end;}
    .stadymenu a{border:3px solid white;border-radius: 20px;font-size: 13px;
     background-color:
-     rgb(4, 4, 88);color:white;height:40px;align-content:center;}
-     @media screen and (max-width: 450px) {
-      .wreckmenu a {margin-top:10px;
-       font-size:10px; 
+     rgb(4, 4, 88);color:white;height:40px;align-content:center;margin-top:10px;padding:5px;}
      
-      }
-    }
+     .wreckmenu{float:right;text-align:center;display:grid;justify-content:end;}
+   .wreckmenu a{border:3px solid white;border-radius: 20px;font-size: 13px;
+    background-color:
+     rgb(4, 4, 88);color:white;height:40px;align-content:center;margin-top:10px;padding:5px;}
+     
     
     @media screen and (min-width: 450px) {
       .wreckmenu a {margin-top:10px;
@@ -107,19 +107,14 @@ h2{color:white;font-weight: bold; font-style: italic;font-family: 'Franklin Goth
         width: 200px;
       }
     }
-    @media screen and (max-width: 450px) {
-      .stadymenu a {margin-top:10px;
-        font-size: 13px;
-        width: 100px;
-      }
-    }
-    
     @media screen and (min-width: 450px) {
       .stadymenu a {margin-top:10px;
         font-size: 20px;
         width: 200px;
       }
     }
+    
+   
 .main-footer{margin-top: 20px;;}
 .choosep{text-align: center;width:70%;color:red;font-size:30px;
    font-family: 'Franklin Gothic Medium', sans-serif; font-style: italic;font-weight: bold;align-items:center;margin:auto;
