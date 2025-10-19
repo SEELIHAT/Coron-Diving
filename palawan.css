@@ -342,6 +342,7 @@ img .imgmaruko{width:220px;margin:auto;height:250px;margin:auto;}
   100% { bottom: 72%; right: 81%; opacity: 0; }
 }
 .whatsap{margin-top:20px;width:100%;border:3px solid rgb(39, 39, 169); text-align:center; margin:auto; padding:5px;}
+.atsap{margin-top:20px;width:100%; text-align:center; margin:auto; padding:5px;}
 .warfly{width:10%;height:6%; animation-name: fly; animation-duration: 10s;position:fixed;}
 .warwrecks{width:35% ;height:20%;animation-name: warwrecks;animation-duration: 10s;position:fixed;}
 @keyframes warwrecks {
@@ -502,3 +503,5 @@ img[alt]{font-size:1px;}
 .philipines li{font-size: 20px;color:blue;font-weight: bold;font-family: 'Times New Roman', serif;}
 .wreckali a{color:white; font-size:18px; }
 .buttonform{width:30%;text-align:center; margin:auto;}
+.sending{border:3px solid black; width:100% ; height:30px;margin:auto;}
+.sendingmail{text-align: center;margin:auto;}
