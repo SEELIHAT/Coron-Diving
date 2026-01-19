@@ -505,3 +505,11 @@ img[alt]{font-size:1px;}
 .buttonform{width:30%;text-align:center; margin:auto;}
 .sending{border:3px solid black; width:100% ; height:30px;margin:auto;}
 .sendingmail{text-align: center;margin:auto;}
+.mapfinger{color:red;font-size: 25px;animation-name: mapfinger;animation-duration: 10s;}
+@keyframes mapfinger{
+  10%{color:yellow; }
+  20%{color:brown; }
+  50%{color:red; font-size: 30px;}
+  80%{color:blue;}
+  100%{color:blueviolet;}
+}
