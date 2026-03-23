@@ -133,8 +133,8 @@ body.face{background-image: url('./images/diving1.webp');
  background-repeat: no-repeat;
  background-attachment: fixed;}
  .ptop{color:white;font-size: 20px;
-  text-shadow: 2px 2px 1px black,
-  -2px -2px 1px black;}
+  text-shadow: 1px 1px 1px black,
+  -1px -1px 1px black;}
  main{display:grid;}
  .bod {
   display: flex;
