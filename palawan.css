@@ -516,3 +516,16 @@ img[alt]{font-size:1px;}
   100%{color:blueviolet;}
 }
 .pepafinger{width:20%; height: 20%; left:0px;bottom: 35px;position:absolute;}
+@keyframes hend22 {
+  10% { bottom: 9%; right: 44%; opacity: 1; }
+  50% { top: 12%; right: 43%; opacity: 1; }
+  60% { top: 18%; right: 42%; opacity: 1; }
+  70% { top: 12%; right: 43%; opacity: 1; }
+  80% { top: 18%; right: 43%; opacity: 1; }
+  100% { bottom: 30%; right: 42%; opacity: 0; }
+}
+.hend22{animation-name:hend22; animation-duration:6s;top: 1px;
+  right:1px;position:absolute;width:22%; height:20%;opacity: 0;z-index: 100;}
+  .roadtothere{position:absolute; z-index:50; top:18%;
+     right:38%;animation-name:hend22; animation-duration:6s;opacity: 0;}
+     @keyframes roadtothere{10%{opacity: 0.5;}100%{opacity:1;}}

@@ -16,4 +16,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "❌ Sorry, mail could not be sent. (Server not configured)";
     }
 }
-?>
+ ?>
